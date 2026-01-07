@@ -203,8 +203,17 @@ def main():
     # Save best-like checkpoint (last state) as "best" for predict
     best_dir = output_dir / "checkpoints" / "best"
     ensure_dir(best_dir)
-    trainer.model.save_pretrained(str(best_dir))
+    # Sauvegarde robuste:
+    # - baseline: save_pretrained normal
+    # - LoRA: merge_and_unload si dispo, pour obtenir un modèle standard HF (plus simple à recharger)
+    if train_cfg.lora.enabled and hasattr(trainer.model, "merge_and_unload"):
+        merged = trainer.model.merge_and_unload()
+        merged.save_pretrained(str(best_dir))
+    else:
+        trainer.model.save_pretrained(str(best_dir))
+        
     tokenizer.save_pretrained(str(best_dir))
+
 
     run_summary = {
         "run_name": train_cfg.train.run_name,

@@ -7,8 +7,8 @@ lora:
   r: 8
   alpha: 16
   dropout: 0.05
-  # Si vide, on essaie d'inférer automatiquement selon le modèle.
-  target_modules: []
+  target_modules: ["query", "value", "q_lin", "v_lin"]
+
 
 train:
   output_dir: "outputs/runs/lora"

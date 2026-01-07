@@ -7,18 +7,56 @@ from pathlib import Path
 import torch
 from torch.utils.data import DataLoader
 
-from transformers import AutoTokenizer, AutoModelForSequenceClassification, DataCollatorWithPadding
+from transformers import (
+    AutoTokenizer,
+    AutoConfig,
+    AutoModelForSequenceClassification,
+    DataCollatorWithPadding,
+)
 
 from term_typing.config import load_data_config
 from term_typing.data import load_table
 from term_typing.features import FeatureBuilder
-from term_typing.constants import ID2LABEL
+from term_typing.constants import ID2LABEL, LABEL2ID
 
 
-def softmax(x):
-    x = x - x.max(axis=-1, keepdims=True)
-    e = torch.exp(torch.tensor(x))
-    return (e / e.sum(dim=-1, keepdim=True)).numpy()
+def is_peft_adapter_dir(ckpt_dir: Path) -> bool:
+    # fichiers typiques PEFT
+    return (ckpt_dir / "adapter_config.json").exists() or (ckpt_dir / "adapter_model.safetensors").exists() or (
+        ckpt_dir / "adapter_model.bin"
+    ).exists()
+
+
+def load_model_for_inference(ckpt_dir: Path):
+    """
+    - Baseline: charge directement le modèle depuis ckpt_dir
+    - LoRA/PEFT: charge base model avec num_labels=4 puis applique l'adapter
+    """
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
+    if is_peft_adapter_dir(ckpt_dir):
+        # Charge via PEFT
+        from peft import PeftConfig, PeftModel
+
+        peft_cfg = PeftConfig.from_pretrained(str(ckpt_dir))
+        base_name = peft_cfg.base_model_name_or_path
+
+        # IMPORTANT: forcer num_labels=4 + mapping
+        cfg = AutoConfig.from_pretrained(
+            base_name,
+            num_labels=len(LABEL2ID),
+            id2label=ID2LABEL,
+            label2id=LABEL2ID,
+        )
+        base = AutoModelForSequenceClassification.from_pretrained(base_name, config=cfg)
+        model = PeftModel.from_pretrained(base, str(ckpt_dir))
+    else:
+        # Baseline (ou modèle merged)
+        model = AutoModelForSequenceClassification.from_pretrained(str(ckpt_dir))
+
+    model.to(device)
+    model.eval()
+    return model, device
 
 
 def main():
@@ -36,12 +74,18 @@ def main():
     out_path = Path(args.output)
     out_path.parent.mkdir(parents=True, exist_ok=True)
 
-    tokenizer = AutoTokenizer.from_pretrained(str(ckpt), use_fast=True)
-    model = AutoModelForSequenceClassification.from_pretrained(str(ckpt))
-    model.eval()
+    # Tokenizer : si ckpt contient tokenizer, on le prend ; sinon base tokenizer auto.
+    # (AutoTokenizer saura se débrouiller avec un dossier PEFT la plupart du temps,
+    #  sinon il utilisera le base model indiqué dans l'adapter.)
+    try:
+        tokenizer = AutoTokenizer.from_pretrained(str(ckpt), use_fast=True)
+    except Exception:
+        # fallback: base tokenizer via peft config
+        from peft import PeftConfig
+        base_name = PeftConfig.from_pretrained(str(ckpt)).base_model_name_or_path
+        tokenizer = AutoTokenizer.from_pretrained(base_name, use_fast=True)
 
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    model.to(device)
+    model, device = load_model_for_inference(ckpt)
 
     feature_builder = FeatureBuilder(
         input_mode=data_cfg.preprocess.input_mode,
@@ -105,11 +149,7 @@ def main():
 
     with out_path.open("w", encoding="utf-8") as f:
         for i in range(len(texts)):
-            rec = {
-                "ID": ids[i],
-                "pred_label": preds[i],
-                "probs": probs[i],
-            }
+            rec = {"ID": ids[i], "pred_label": preds[i], "probs": probs[i]}
             f.write(json.dumps(rec, ensure_ascii=False) + "\n")
 
     print(f" Wrote predictions to: {out_path}")

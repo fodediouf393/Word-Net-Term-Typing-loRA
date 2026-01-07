@@ -4,6 +4,7 @@ import argparse
 import subprocess
 from pathlib import Path
 from datetime import datetime
+import os
 
 
 MODELS = [
@@ -13,9 +14,9 @@ MODELS = [
 ]
 
 
-def run(cmd: list[str]) -> None:
+def run(cmd: list[str], env: dict) -> None:
     print("\n$ " + " ".join(cmd))
-    subprocess.check_call(cmd)
+    subprocess.check_call(cmd, env=env)
 
 
 def main():
@@ -34,54 +35,69 @@ def main():
 
     timestamp = datetime.now().strftime("%Y%m%d-%H%M%S")
 
-    # ensure python module path is correct
-    env = dict(**{**__import__("os").environ})
+    # Always ensure module import works
+    env = dict(os.environ)
     env["PYTHONPATH"] = str(repo / "src")
+
+    data_yaml = str(Path(args.data_yaml).resolve())
+    baseline_yaml = str(Path(args.baseline_yaml).resolve())
+    lora_yaml = str(Path(args.lora_yaml).resolve())
+    test_path = str(Path(args.test_path).resolve())
 
     for short, model_name in MODELS:
         for mode in ["baseline", "lora"]:
-            cfg = args.baseline_yaml if mode == "baseline" else args.lora_yaml
+            cfg = baseline_yaml if mode == "baseline" else lora_yaml
 
             run_name = f"{short}-{mode}-{args.epochs_note}-{timestamp}"
             output_dir = out_root / short / mode / run_name
 
-            # Train
-            run([
-                "python", "-m", "term_typing.train",
-                "--config", str(Path(cfg).resolve()),
-                "--data", str(Path(args.data_yaml).resolve()),
-                "--model_name", model_name,
-                "--output_dir", str(output_dir),
-                "--run_name", run_name,
-                "--lora_enabled", "true" if mode == "lora" else "false",
-            ])
+            # 1) Train
+            run(
+                [
+                    "python", "-m", "term_typing.train",
+                    "--config", cfg,
+                    "--data", data_yaml,
+                    "--model_name", model_name,
+                    "--output_dir", str(output_dir),
+                    "--run_name", run_name,
+                    "--lora_enabled", "true" if mode == "lora" else "false",
+                ],
+                env=env,
+            )
 
-            # Predict on test
+            # 2) Predict on test
             pred_path = repo / "outputs" / "predictions" / f"{run_name}.jsonl"
             pred_path.parent.mkdir(parents=True, exist_ok=True)
 
-            run([
-                "python", "-m", "term_typing.predict",
-                "--ckpt", str(output_dir / "checkpoints" / "best"),
-                "--input", str(Path(args.test_path).resolve()),
-                "--output", str(pred_path),
-                "--data", str(Path(args.data_yaml).resolve()),
-            ])
+            run(
+                [
+                    "python", "-m", "term_typing.predict",
+                    "--ckpt", str(output_dir / "checkpoints" / "best"),
+                    "--input", test_path,
+                    "--output", str(pred_path),
+                    "--data", data_yaml,
+                ],
+                env=env,
+            )
 
-            # Eval from ID
-            run([
-                "python", "scripts/eval_from_id.py",
-                "--test", str(Path(args.test_path).resolve()),
-                "--pred", str(pred_path),
-                "--run_name", run_name,
-                "--out_metrics_dir", str(repo / "outputs" / "metrics"),
-                "--out_images_dir", str(repo / "outputs" / "report_images"),
-            ])
+            # 3) Eval from ID (gold parsed from ID)
+            run(
+                [
+                    "python", "-m", "term_typing.eval_from_id",
+                    "--test", test_path,
+                    "--pred", str(pred_path),
+                    "--run_name", run_name,
+                    "--out_metrics_dir", str(repo / "outputs" / "metrics"),
+                    "--out_images_dir", str(repo / "outputs" / "report_images"),
+                ],
+                env=env,
+            )
 
     print("\n Sweep complete.")
-    print(f"Runs in: {out_root}")
-    print(f"Images in: {repo / 'outputs' / 'report_images'}")
-    print(f"Metrics in: {repo / 'outputs' / 'metrics'}")
+    print(f"Runs:   {out_root}")
+    print(f"Images: {repo / 'outputs' / 'report_images'}")
+    print(f"Metrics:{repo / 'outputs' / 'metrics'}")
+    print(f"Preds:  {repo / 'outputs' / 'predictions'}")
 
 
 if __name__ == "__main__":

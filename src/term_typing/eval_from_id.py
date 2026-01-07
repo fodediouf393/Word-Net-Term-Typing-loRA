@@ -85,7 +85,7 @@ def main():
     # plot confusion matrix
     fig = plt.figure()
     ax = fig.add_subplot(111)
-    im = ax.imshow(cm, cmap="viridis")
+    im = ax.imshow(cm, cmap="Blues")
     fig.colorbar(im, ax=ax, fraction=0.046, pad=0.04)
 
     ax.set_xticks(range(len(LABELS)))
