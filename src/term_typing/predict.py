@@ -1,69 +1,47 @@
 from __future__ import annotations
 
 import argparse
+import json
 from pathlib import Path
-from typing import List, Dict
 
-import numpy as np
-import pandas as pd
 import torch
-from transformers import AutoTokenizer, AutoModelForSequenceClassification
+from torch.utils.data import DataLoader
+
+from transformers import AutoTokenizer, AutoModelForSequenceClassification, DataCollatorWithPadding
 
 from term_typing.config import load_data_config
-from term_typing.constants import ID2LABEL
+from term_typing.data import load_table
 from term_typing.features import FeatureBuilder
-from term_typing.utils import ensure_dir, write_jsonl
+from term_typing.constants import ID2LABEL
 
 
-def load_input_table(path: str) -> pd.DataFrame:
-    if path.lower().endswith(".jsonl"):
-        return pd.read_json(path, lines=True)
-    if path.lower().endswith(".json"):
-        return pd.read_json(path)
-    if path.lower().endswith(".csv"):
-        return pd.read_csv(path)
-    raise ValueError(f"Unsupported input format: {path}")
-
-
-@torch.inference_mode()
-def predict_rows(
-    model,
-    tokenizer,
-    texts: List[str],
-    batch_size: int = 64,
-    max_length: int = 128,
-) -> np.ndarray:
-    model.eval()
-    all_probs = []
-    for i in range(0, len(texts), batch_size):
-        batch = texts[i:i+batch_size]
-        enc = tokenizer(batch, truncation=True, max_length=max_length, padding=True, return_tensors="pt")
-        enc = {k: v.to(model.device) for k, v in enc.items()}
-        logits = model(**enc).logits
-        probs = torch.softmax(logits, dim=-1).detach().cpu().numpy()
-        all_probs.append(probs)
-    return np.vstack(all_probs)
+def softmax(x):
+    x = x - x.max(axis=-1, keepdims=True)
+    e = torch.exp(torch.tensor(x))
+    return (e / e.sum(dim=-1, keepdim=True)).numpy()
 
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--ckpt", required=True, help="Chemin checkpoint (best)")
-    parser.add_argument("--input", required=True, help="Fichier JSONL/CSV d'entrées")
-    parser.add_argument("--output", required=True, help="Fichier JSONL de sortie")
-    parser.add_argument("--data", required=True, help="Data config YAML (pour input_mode)")
+    parser.add_argument("--ckpt", required=True, help="Path to checkpoint dir (outputs/.../checkpoints/best)")
+    parser.add_argument("--input", required=True, help="Test file path (json/jsonl/csv)")
+    parser.add_argument("--output", required=True, help="Output predictions jsonl")
+    parser.add_argument("--data", required=True, help="Data config YAML")
+    parser.add_argument("--batch_size", type=int, default=64)
     args = parser.parse_args()
 
     data_cfg = load_data_config(args.data)
 
-    df = load_input_table(args.input)
+    ckpt = Path(args.ckpt)
+    out_path = Path(args.output)
+    out_path.parent.mkdir(parents=True, exist_ok=True)
 
-    term_field = data_cfg.dataset.term_field
-    context_field = data_cfg.dataset.context_field
+    tokenizer = AutoTokenizer.from_pretrained(str(ckpt), use_fast=True)
+    model = AutoModelForSequenceClassification.from_pretrained(str(ckpt))
+    model.eval()
 
-    if term_field not in df.columns:
-        raise KeyError(f"Input is missing '{term_field}' column")
-    if context_field not in df.columns:
-        df[context_field] = ""
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    model.to(device)
 
     feature_builder = FeatureBuilder(
         input_mode=data_cfg.preprocess.input_mode,
@@ -73,43 +51,68 @@ def main():
         marker_right=data_cfg.preprocess.marker_right,
     )
 
-    texts = [
-        feature_builder.build_text(str(row[term_field]), str(row[context_field]))
-        for _, row in df.iterrows()
-    ]
+    df = load_table(args.input)
 
-    tokenizer = AutoTokenizer.from_pretrained(args.ckpt, use_fast=True)
-    model = AutoModelForSequenceClassification.from_pretrained(args.ckpt)
-    device = "cuda" if torch.cuda.is_available() else "cpu"
-    model.to(device)
+    term_field = data_cfg.dataset.term_field
+    context_field = data_cfg.dataset.context_field
 
-    probs = predict_rows(
-        model=model,
-        tokenizer=tokenizer,
-        texts=texts,
-        batch_size=64,
+    if term_field not in df.columns:
+        raise KeyError(f"Missing term_field '{term_field}' in test columns: {list(df.columns)}")
+    if context_field not in df.columns:
+        df[context_field] = ""
+
+    texts = []
+    ids = df["ID"].tolist() if "ID" in df.columns else [None] * len(df)
+
+    for _, row in df.iterrows():
+        term = str(row[term_field]) if row[term_field] is not None else ""
+        context = str(row[context_field]) if row[context_field] is not None else ""
+        texts.append(feature_builder.build_text(term=term, context=context))
+
+    enc = tokenizer(
+        texts,
+        truncation=True,
         max_length=data_cfg.preprocess.max_length,
+        padding=False,
+        return_tensors=None,
     )
 
-    pred_ids = probs.argmax(axis=-1)
-    pred_labels = [ID2LABEL[int(i)] for i in pred_ids]
-    pred_confs = probs.max(axis=-1)
+    # Build dataloader
+    features = []
+    for i in range(len(texts)):
+        item = {k: enc[k][i] for k in enc.keys()}
+        item["idx"] = i
+        features.append(item)
 
-    rows_out: List[Dict] = []
-    for idx, (_, row) in enumerate(df.iterrows()):
-        rows_out.append({
-            "term": row[term_field],
-            "context": row[context_field],
-            "pred_label": pred_labels[idx],
-            "pred_conf": float(pred_confs[idx]),
-            "probs": {ID2LABEL[i]: float(probs[idx, i]) for i in range(probs.shape[1])},
-        })
+    collator = DataCollatorWithPadding(tokenizer=tokenizer, return_tensors="pt")
+    dl = DataLoader(features, batch_size=args.batch_size, shuffle=False, collate_fn=collator)
 
-    out_path = Path(args.output)
-    ensure_dir(out_path.parent)
-    write_jsonl(out_path, rows_out)
+    preds = [None] * len(texts)
+    probs = [None] * len(texts)
 
-    print(f" Predictions saved to: {out_path}")
+    with torch.no_grad():
+        for batch in dl:
+            idx = batch.pop("idx")
+            batch = {k: v.to(device) for k, v in batch.items()}
+            out = model(**batch)
+            logits = out.logits.detach().cpu()
+            p = torch.softmax(logits, dim=-1).numpy()
+            y = logits.argmax(dim=-1).numpy()
+
+            for j, ii in enumerate(idx.tolist()):
+                preds[ii] = ID2LABEL[int(y[j])]
+                probs[ii] = [float(x) for x in p[j].tolist()]
+
+    with out_path.open("w", encoding="utf-8") as f:
+        for i in range(len(texts)):
+            rec = {
+                "ID": ids[i],
+                "pred_label": preds[i],
+                "probs": probs[i],
+            }
+            f.write(json.dumps(rec, ensure_ascii=False) + "\n")
+
+    print(f" Wrote predictions to: {out_path}")
 
 
 if __name__ == "__main__":

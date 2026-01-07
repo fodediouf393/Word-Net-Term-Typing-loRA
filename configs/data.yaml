@@ -1,13 +1,12 @@
 dataset:
-  train_path: "data/raw/train.jsonl"
-  test_path: "data/raw/test.jsonl"
+  train_path: "data/raw/train.json"
+  test_path: "data/raw/test.json"
   term_field: "term"
-  context_field: "context"
-  label_field: "label"
+  context_field: "sentence"
+  label_field: "type"
 
 preprocess:
-  # context_only | context_plus_term | marked_context
-  input_mode: "marked_context"
+  input_mode: "marked_context"   # context_only | context_plus_term | marked_context
   max_length: 128
   lowercase_term_match: true
   add_special_tokens_markers: true

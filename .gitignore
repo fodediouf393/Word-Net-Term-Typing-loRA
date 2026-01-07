@@ -21,3 +21,4 @@ outputs/
 # HuggingFace caches (optionnel)
 .cache/
 **/.cache/
+downloads/

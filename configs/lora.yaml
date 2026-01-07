@@ -15,7 +15,7 @@ train:
   run_name: "lora-bert"
   seed: 42
 
-  epochs: 3
+  epochs: 5
   batch_size: 32
   eval_batch_size: 64
   learning_rate: 2.0e-5
