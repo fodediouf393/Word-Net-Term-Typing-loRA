@@ -1,0 +1,9 @@
+torch
+transformers>=4.40.0
+datasets>=2.18.0
+peft>=0.10.0
+accelerate>=0.29.0
+scikit-learn>=1.2.0
+PyYAML>=6.0.0
+numpy>=1.23.0
+pandas>=2.0.0

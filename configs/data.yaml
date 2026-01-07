@@ -1,0 +1,15 @@
+dataset:
+  train_path: "data/raw/train.jsonl"
+  test_path: "data/raw/test.jsonl"
+  term_field: "term"
+  context_field: "context"
+  label_field: "label"
+
+preprocess:
+  # context_only | context_plus_term | marked_context
+  input_mode: "marked_context"
+  max_length: 128
+  lowercase_term_match: true
+  add_special_tokens_markers: true
+  marker_left: "[TGT]"
+  marker_right: "[/TGT]"
