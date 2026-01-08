@@ -26,59 +26,73 @@ and on clean, reproducible experimental comparisons.
 The task corresponds to **WordNet SubTask A.1 (Term Typing)**.
 
 Given:
-- a **lexical term** L,
-- an optional **context sentence** S,
+- a lexical term **L**
+- an optional context sentence **S**
 
-the goal is to predict the **semantic type** T of the term.
+the goal is to predict the semantic type **T**.
 
-In the WordNet setting, the type space is defined as:
-
-T ∈ {noun, verb, adjective, adverb}
+<p align="center">
+  <b>T ∈ { noun, verb, adjective, adverb }</b>
+</p>
 
 ---
 
 ## Mathematical Formulation
 
-The Term Typing task is modeled as a classification function:
+We model Term Typing as a classification function:
 
-f(S, L) → T
+<p align="center">
+  <img alt="f_theta" src="https://latex.codecogs.com/svg.image?\dpi{140}\bf%20f_{\theta}:(S,L)\rightarrow%20T" />
+</p>
 
 where:
-- L is a lexical term,
-- S is an optional context sentence,
-- T is the predicted semantic type.
+- **L** is a lexical term,
+- **S** is an optional context sentence,
+- **T** is the predicted semantic type,
+- **fθ** denotes a parameterized model.
 
 ---
 
 ### Encoder-Based Models
 
-Given a pair (S, L), a textual input x is constructed and passed to a transformer encoder:
+For encoder-based approaches, the input pair (S, L) is converted to a textual sequence **x** and passed through an encoder:
 
-h = Encoder(x)
+<p align="center">
+  <img alt="h=Encoder(x)" src="https://latex.codecogs.com/svg.image?\dpi{140}\bf%20h=\mathrm{Encoder}_{\theta}(x)" />
+</p>
 
-The encoder representation is mapped to a probability distribution over types:
+The encoder output is mapped to a distribution over types:
 
-p(T | S, L) = softmax(W · h + b)
+<p align="center">
+  <img alt="p(T|S,L)=softmax(Wh+b)" src="https://latex.codecogs.com/svg.image?\dpi{140}\bf%20p(T\mid%20S,L)=\mathrm{softmax}(Wh&plus;b)" />
+</p>
 
-The predicted type is obtained as:
+The predicted type is:
 
-T̂ = argmax p(T | S, L)
+<p align="center">
+  <img alt="T_hat=argmax p(T|S,L)" src="https://latex.codecogs.com/svg.image?\dpi{140}\bf%20\hat{T}=\arg\max_{T\in\mathcal{T}}%20p(T\mid%20S,L)" />
+</p>
 
-Training is performed using cross-entropy loss.
-Both **full fine-tuning** and **parameter-efficient fine-tuning with LoRA** are considered.
+Training is performed by minimizing cross-entropy loss on labeled examples.
+We compare:
+- **full fine-tuning** (baseline)
+- **LoRA** parameter-efficient fine-tuning
 
 ---
 
 ### Few-Shot LLM Formulation
 
-In the few-shot setting, model parameters remain frozen.
-A prompt P is constructed from a small set of labeled examples:
+In the few-shot setting, model parameters are not updated. A prompt **P** is built from a small labeled set:
 
-P = {(S₁, L₁, T₁), …, (Sₖ, Lₖ, Tₖ)}
+<p align="center">
+  <img alt="P={(Si,Li,Ti)}" src="https://latex.codecogs.com/svg.image?\dpi{140}\bf%20P=\{(S_i,L_i,T_i)\}_{i=1}^{k}" />
+</p>
 
 Given a new input (S, L), the LLM predicts:
 
-T̂ = LLM(P, S, L)
+<p align="center">
+  <img alt="T_hat=LLM(P,S,L)" src="https://latex.codecogs.com/svg.image?\dpi{140}\bf%20\hat{T}=\mathrm{LLM}(P,S,L)" />
+</p>
 
 The output is constrained to belong to the predefined type set.
 
@@ -96,7 +110,7 @@ src/term_typing/
 ├── eval_from_id.py Evaluation and confusion matrices
 ├── make_plots.py Comparative plots
 └── run_sweep.py Full experimental sweep
-
+fewshot_llms/
 ├── few-shot_mistral.py
 ├── few-shot_llama.py
 ├── few-shot_deepseek.py
@@ -117,7 +131,7 @@ outputs/
 - Confusion matrices
 - Training cost indicators (time, number of trainable parameters)
 
-All figures are automatically saved in `outputs/report_images/`.
+All figures are saved in `outputs/report_images/`.
 
 ---
 
@@ -137,7 +151,4 @@ This project aims to answer the following questions:
 - Explicit YAML configuration files
 - TensorBoard logging for all encoder-based experiments
 - Unified evaluation pipeline
-
----
-
 

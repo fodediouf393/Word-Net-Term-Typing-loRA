@@ -8,23 +8,21 @@ from tqdm import tqdm
 from transformers import pipeline
 from sklearn.metrics import accuracy_score, f1_score, classification_report, confusion_matrix
 
-# Chemins projet
 ROOT = Path(__file__).resolve().parent
 
-# Données WordNet
 DATA_DIR = ROOT / "downloads" / "llms4ol_2024" / "TaskA-Term Typing" / "SubTask A.1(FS) - WordNet"
 TRAIN_FILE = DATA_DIR / "A.1(FS)_WordNet_Train.json"
 TEST_FILE = DATA_DIR / "A.1(FS)_WordNet_Test.json"
 GT_FILE = DATA_DIR / "A.1(FS)_WordNet_Test_GT.json"
 
-# Sorties communes
 OUTPUT_DIR = ROOT / "output_llms"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-# Paramètres
 PROVIDER = "sml_local"
 MODEL = "Qwen/Qwen2.5-0.5B-Instruct"
+
 N_FEWSHOT = 6
+CHECKPOINT_EVERY = 1
 
 ALLOWED_LABELS = ["noun", "verb", "adjective", "adverb"]
 ALLOWED = set(ALLOWED_LABELS)
@@ -35,9 +33,11 @@ def load_json(path: Path):
     with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
 
-def save_json(obj, path: Path):
-    with open(path, "w", encoding="utf-8") as f:
+def atomic_save_json(obj, path: Path):
+    tmp = path.with_suffix(path.suffix + ".tmp")
+    with open(tmp, "w", encoding="utf-8") as f:
         json.dump(obj, f, indent=2, ensure_ascii=False)
+    tmp.replace(path)
 
 def norm_type(t):
     if isinstance(t, list) and t:
@@ -84,15 +84,19 @@ def postprocess(pred):
     return pred if pred in ALLOWED else "unknown"
 
 def call_llm_local(generator, prompt):
-    out = generator(
-        prompt,
-        max_new_tokens=8,
-        do_sample=False,
-        return_full_text=False
-    )
+    out = generator(prompt, max_new_tokens=8, do_sample=False, return_full_text=False)
     if isinstance(out, list) and out and isinstance(out[0], dict) and "generated_text" in out[0]:
         return out[0]["generated_text"]
     return str(out)
+
+def load_existing_predictions(path: Path):
+    if not path.exists():
+        return {}
+    try:
+        preds = load_json(path)
+        return {p["ID"]: p["predicted_type"] for p in preds if "ID" in p and "predicted_type" in p}
+    except Exception:
+        return {}
 
 def save_confusion_matrix_png(cm, labels, path: Path, title: str):
     plt.figure()
@@ -111,31 +115,39 @@ def save_confusion_matrix_png(cm, labels, path: Path, title: str):
     plt.close()
 
 def main():
+    safe_model = MODEL.replace("/", "_").replace(":", "_")
+    OUTPUT_PRED_FILE = OUTPUT_DIR / f"A.1(FS)_WordNet_Predictions_{PROVIDER}_{safe_model}.json"
+    OUTPUT_METRICS_FILE = OUTPUT_DIR / f"A.1(FS)_WordNet_Metrics_{PROVIDER}_{safe_model}.json"
+    OUTPUT_CM_PNG = OUTPUT_DIR / f"A.1(FS)_WordNet_ConfMat_{PROVIDER}_{safe_model}.png"
+
     train_data = load_json(TRAIN_FILE)
     test_data = load_json(TEST_FILE)
     gt_data = load_json(GT_FILE)
 
     fewshot_block = build_fewshot_examples(train_data, N_FEWSHOT)
 
-    safe_model = MODEL.replace("/", "_").replace(":", "_")
-    pred_path = OUTPUT_DIR / f"A.1(FS)_WordNet_Predictions_{PROVIDER}_{safe_model}.json"
-    metrics_path = OUTPUT_DIR / f"A.1(FS)_WordNet_Metrics_{PROVIDER}_{safe_model}.json"
-    cm_png_path = OUTPUT_DIR / f"A.1(FS)_WordNet_ConfMat_{PROVIDER}_{safe_model}.png"
+    pred_map = load_existing_predictions(OUTPUT_PRED_FILE)
+    if pred_map:
+        print(f"Resume enabled: {len(pred_map)} predictions already saved.")
 
     generator = pipeline("text-generation", model=MODEL, device_map="auto")
 
-    predictions = []
     for item in tqdm(test_data):
+        item_id = item["ID"]
+        if item_id in pred_map:
+            continue
+
         prompt = build_prompt(item["term"], item.get("sentence", ""), fewshot_block)
         raw = call_llm_local(generator, prompt)
-        pred = postprocess(raw)
-        predictions.append({"ID": item["ID"], "predicted_type": pred})
+        pred_map[item_id] = postprocess(raw)
 
-    save_json(predictions, pred_path)
+        out_list = [{"ID": k, "predicted_type": v} for k, v in pred_map.items()]
+        atomic_save_json(out_list, OUTPUT_PRED_FILE)
+
+    out_list = [{"ID": k, "predicted_type": v} for k, v in pred_map.items()]
+    atomic_save_json(out_list, OUTPUT_PRED_FILE)
 
     gt_map = {x["ID"]: norm_type(x["type"]) for x in gt_data}
-    pred_map = {x["ID"]: x["predicted_type"] for x in predictions}
-
     y_true = [gt_map[k] for k in gt_map.keys()]
     y_pred = [pred_map.get(k, "unknown") for k in gt_map.keys()]
 
@@ -147,30 +159,31 @@ def main():
     )
 
     cm = confusion_matrix(y_true, y_pred, labels=ALLOWED_LABELS)
-    save_confusion_matrix_png(cm, ALLOWED_LABELS, cm_png_path, f"{PROVIDER} | {MODEL}")
+    save_confusion_matrix_png(cm, ALLOWED_LABELS, OUTPUT_CM_PNG, f"{PROVIDER} | {MODEL}")
 
     metrics = {
         "provider": PROVIDER,
         "model": MODEL,
         "n_fewshot": N_FEWSHOT,
+        "checkpoint_every": CHECKPOINT_EVERY,
         "accuracy": acc,
         "macro_f1": macro_f1,
         "labels": ALLOWED_LABELS,
         "confusion_matrix": cm.tolist(),
         "classification_report": report,
         "outputs": {
-            "predictions_json": str(pred_path),
-            "metrics_json": str(metrics_path),
-            "confusion_matrix_png": str(cm_png_path),
+            "predictions_json": str(OUTPUT_PRED_FILE),
+            "metrics_json": str(OUTPUT_METRICS_FILE),
+            "confmat_png": str(OUTPUT_CM_PNG),
         },
     }
-    save_json(metrics, metrics_path)
+    atomic_save_json(metrics, OUTPUT_METRICS_FILE)
 
     print(f"Accuracy: {acc:.4f}")
     print(f"Macro-F1: {macro_f1:.4f}")
-    print(f"Saved: {pred_path}")
-    print(f"Saved: {metrics_path}")
-    print(f"Saved: {cm_png_path}")
+    print(f"Saved: {OUTPUT_PRED_FILE}")
+    print(f"Saved: {OUTPUT_METRICS_FILE}")
+    print(f"Saved: {OUTPUT_CM_PNG}")
 
 if __name__ == "__main__":
     main()

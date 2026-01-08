@@ -1,0 +1,6298 @@
+[
+  {
+    "ID": "__trade_name_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__telephone_VB_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__united_kingdom_of_great_britain_and_northern_ireland_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__suborder_blattodea_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__rickettsiaceae_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__phylum_entoprocta_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__position_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__drill_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__breadfruit_tree_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__take_a_breather_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__transmutation_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__sympathizer_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__ration_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__transfix_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__chromosome_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__surface_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__accentuation_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__lexicology_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__precession_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__vanish_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__sophisticated_JJ_1",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__ski_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__brasov_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__mayhem_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__equanimity_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__coelenterate_family_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__sops_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__thunder_VB_4",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__railroading_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__grant_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__time_to_come_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__major_premiss_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__host_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__docket_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__refine_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__kilobyte_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__hostility_NN_4",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__roof_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__slaughter_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__play_VB_26",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__york_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__systems_software_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__podcast_VB_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__family_crocodylidae_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__evidence_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__number_NN_6",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__tinned_goods_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__crosshatch_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__acronym_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__tragelaphus_scriptus_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__praise_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__jam_VB_4",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__sterilize_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__syngnathidae_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__insisting_NN_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__subclass_crossopterygii_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__north_atlantic_treaty_organization_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__tummy_crunch_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__ulmus_carpinifolia_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__field_event_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__conduct_VB_6",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__order_casuarinales_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__get_out_VB_7",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__watt_second_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__tolerate_VB_4",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__wench_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__denote_VB_3",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__basketball_court_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__monster_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__stylize_VB_1",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__trail_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__forgetfulness_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__andante_NN_2",
+    "predicted_type": "adverb"
+  },
+  {
+    "ID": "__jelly_fungus_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__breaking_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__zoology_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__republic_of_india_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__devaluation_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__hit_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__pause_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__freight_VB_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__plus_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__wive_VB_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__coastal_diving_bird_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__fred_astaire_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__glade_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__culpable_negligence_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__set_up_VB_5",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__healthy_JJ_1",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__warping_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__carthage_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__woody_guthrie_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__rome_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__take_VB_33",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__indenture_NN_4",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__pea_family_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__read_VB_3",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__vomiting_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__top_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__ridge_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__wipeout_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__shanty_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__scribe_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__propel_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__sorbus_domestica_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__strike_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__collar_VB_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__hexane_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__hellenic_republic_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__stone_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__unbelievable_JJ_1",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__weightiness_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__lay_to_rest_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__genus_celtis_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__vinify_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__thomas_the_doubting_apostle_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__spoliation_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__dissolution_NN_4",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__tie_NN_8",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__magnitude_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__iron_age_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__wreath_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__traction_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__helsinki_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__motor_horn_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__worrying_NN_1",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__youngster_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__unequivocalness_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__venturer_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__deployment_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__defensive_structure_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__plunge_VB_6",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__monstrosity_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__skimmer_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__charge_NN_3",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__dardic_language_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__cool_down_VB_3",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__genus_eleutherodactylus_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__muliebrity_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__oxford_grey_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__unreliableness_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__feature_article_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__dress_VB_9",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__rooter_skunk_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__honourableness_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__compass_plant_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__turn_NN_9",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__mumble_NN_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__superclass_agnatha_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__attach_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__passing_play_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__family_compositae_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__order_malvales_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__saponify_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__oesophagus_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__treponemataceae_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__matchmaker_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__cask_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__plantagenet_line_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__totemist_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__surgical_instrument_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__unintelligent_JJ_1",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__call_VB_25",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__epithelium_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__geology_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__asia_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__fridge_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__declaratory_JJ_1",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__kindle_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__sarcosomataceae_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__brother_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__philosophizing_NN_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__prim_up_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__ophioglossum_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__shape_NN_4",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__number_VB_3",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__travesty_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__sociology_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__train_VB_11",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__orchestration_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__star_earthball_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__subdivision_pinophytina_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__garden_VB_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__germany_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__salix_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__family_certhiidae_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__pullback_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__mangifera_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__understand_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__existence_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__open_up_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__family_coccidae_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__minniebush_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__swaggerer_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__matte_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__reprove_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__neritid_gastropod_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__switch_NN_5",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__enlarge_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__rock_oil_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__suite_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__mouth_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__pink_family_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__genus_arenaria_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__swiss_mountain_pine_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__androgenous_JJ_1",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__folk_music_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__morocco_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__kam-tai_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__scholar_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__emerge_VB_5",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__wheeled_vehicle_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__restore_VB_5",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__cinnamon_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__stabilizer_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__unfriendliness_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__watch_VB_3",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__sculpture_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__longness_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__symbolizing_NN_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__heterokontae_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__participation_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__inventor_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__fortress_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__subsidiarity_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__subjugate_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__sense_NN_4",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__qualifying_NN_1",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__linden_tree_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__reform_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__plantae_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__initiate_VB_3",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__intractableness_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__interaction_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__orate_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__sucker_punch_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__refreshen_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__australian_alps_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__paddler_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__regimentals_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__pirouette_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__subfamily_papilionoideae_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__topper_NN_3",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__stain_NN_3",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__layer_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__trade_VB_5",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__family_clupeidae_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__make_VB_12",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__synchronize_VB_3",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__wood_warbler_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__nansen_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__hold_NN_5",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__flare_NN_2",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__investigation_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__solanaceae_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__teasing_NN_3",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__zambia_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__lining_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__united_mexican_states_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__spongillafly_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__viverrinae_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__italic_NN_1",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__elect_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__rectum_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__parasympathetic_nervous_system_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__declamation_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__hirsute_JJ_1",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__turnout_NN_7",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__academy_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__internal-combustion_engine_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__transylvanian_alps_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__feverish_JJ_2",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__oxidize_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__touching_NN_1",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__extraction_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__game_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__marne_river_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__turn_VB_12",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__give_out_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__waggle_NN_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__get_rid_of_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__righteousness_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__seal_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__devalue_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__mustelidae_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__parthenocissus_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__agent_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__subdivision_deuteromycotina_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__veratrum_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__earth_science_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__utah_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__dicker_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__genus_brachychiton_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__statice_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__gramma_grass_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__lacing_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__compartmentalization_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__family_caryocaraceae_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__swastika_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__war_machine_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__understand_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__study_VB_6",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__straight_person_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__honshu_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__naturalization_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__lambertia_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__ordered_JJ_3",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__ordain_VB_4",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__prevarication_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__human_gamma_globulin_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__profundity_NN_3",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__unit_of_measurement_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__tsuga_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__stop_VB_3",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__ford_NN_7",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__pretend_NN_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__suddenness_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__uplift_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__compound_VB_5",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__invigilator_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__spermatophyta_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__admix_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__family_accipitridae_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__destalinization_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__flap_VB_4",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__phenylacetamide_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__male_reproductive_system_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__gallop_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__right_fielder_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__catabolize_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__obfuscate_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__publish_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__pansexual_NN_1",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__apeldoorn_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__yearn_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__family_elaeocarpaceae_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__zip_NN_3",
+    "predicted_type": "adverb"
+  },
+  {
+    "ID": "__family_cynipidae_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__genus_calochortus_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__gum_VB_4",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__ordain_VB_3",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__true_pepper_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__mire_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__isn_NN_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__order_apodes_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__ziphiidae_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__name_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__checkout_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__conclude_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__treater_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__resect_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__supplement_NN_3",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__genus_felis_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__back_VB_5",
+    "predicted_type": "adverb"
+  },
+  {
+    "ID": "__lansing_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__nicker_seed_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__subclass_cirripedia_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__prussia_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__parula_warbler_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__stipple_VB_4",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__loosening_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__shaft_NN_8",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__construct_NN_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__visual_communication_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__systema_respiratorium_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__legal_expert_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__divergency_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__giuseppe_balsamo_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__genus_tyrannosaurus_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__vote_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__inculpation_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__gregory_xii_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__out-herod_VB_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__flaunt_NN_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__progne_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__electrify_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__gymnastic_apparatus_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__family_cupressaceae_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__urban_viii_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__pteridaceae_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__think_VB_12",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__plication_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__think_VB_5",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__respond_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__sino-tibetan_language_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__pulverize_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__objurgate_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__reality_NN_4",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__check_NN_12",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__programme_NN_4",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__arbor_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__council_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__communication_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__rede_VB_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__fringe_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__fish_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__squabble_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__married_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__decoration_NN_3",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__suppress_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__joyous_JJ_1",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__north_platte_river_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__remaking_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__leyden_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__cecum_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__reference_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__tadarida_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__truth_NN_5",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__squish_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__lump_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__item_NN_3",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__indorse_VB_3",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__marsilea_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__parabolic_geometry_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__spiny_lobster_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__take_for_granted_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__timaliidae_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__keep_VB_7",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__total_VB_1",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__seriola_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__clear_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__south_american_poison_toad_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__usa_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__prunus_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__sunglasses_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__traveller_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__productive_JJ_1",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__outpouring_NN_4",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__genus_artocarpus_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__segregate_NN_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__drinker_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__noncompliance_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__light_up_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__shiah_islam_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__rhinencephalon_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__liquidation_NN_3",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__zion_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__bioweapon_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__mechanical_system_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__forge_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__capable_JJ_1",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__eugene_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__naive_JJ_1",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__najas_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__reception_NN_4",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__start_up_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__waterspout_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__clinch_VB_3",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__untrusty_JJ_1",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__newark_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__schematize_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__expose_VB_7",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__class_ascomycetes_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__everlasting_flower_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__movement_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__lowering_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__collectible_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__scooter_NN_3",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__suborder_anthropoidea_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__vena_iliaca_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__blood_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__ophiodontidae_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__firepower_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__haematopus_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__micron_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__reliever_NN_3",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__close_VB_9",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__speckled_trout_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__neoclassicism_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__melophagus_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__surprise_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__nij_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__thalmencephalon_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__fudge_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__nail_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__john_l._h._down_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__catchphrase_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__sensitize_VB_3",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__presentment_NN_3",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__madras_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__building_material_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__friendly_JJ_1",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__flying_lizard_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__potman_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__violate_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__mash_VB_3",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__distill_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__ring_NN_5",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__boundary_condition_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__promise_VB_3",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__unsoundness_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__press_VB_7",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__cannula_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__throw_VB_15",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__crooner_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__tarrietia_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__politics_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__fluctuate_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__run_VB_26",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__genus_dacrydium_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__regiomontanus_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__slope_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__selector_switch_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__tramp_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__run_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__anticipator_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__stavanger_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__genus_elops_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__literary_work_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__vocalizer_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__genus_agaricus_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__nagoya_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__libel_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__european_union_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__deep_south_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__family_dasypodidae_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__take_down_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__rehearsal_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__mask_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__crack_VB_11",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__umbilical_cord_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__conform_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__nutrition_NN_3",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__embrace_NN_3",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__bed_VB_3",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__sympathize_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__screen_NN_5",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__hizb_ut-tahrir_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__genus_homo_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__fugacity_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__typicality_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__fallboard_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__mouth-to-mouth_resuscitation_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__trip_the_light_fantastic_toe_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__print_VB_4",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__podiatry_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__scowl_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__incinerate_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__vary_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__genus_grevillea_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__mobile_home_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__testify_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__caddoan_language_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__defaulter_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__proteaceae_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__suborder_myomorpha_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__richard_buckminster_fuller_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__stomatopod_crustacean_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__name_VB_7",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__stamen_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__yugoslavia_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__detrition_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__vaunt_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__invitation_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__phasmida_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__tagasaste_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__prompt_VB_2",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__inspector_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__old_line_state_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__robalo_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__killdeer_plover_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__combust_VB_4",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__tachygraphy_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__roll-on_roll-off_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__resort_NN_4",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__troy_pound_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__stinger_NN_4",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__cream_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__tarsioidea_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__entozoon_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__absorber_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__oftenness_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__hind_leg_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__transplant_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__twin_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__trial_impression_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__comparative_negligence_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__sitting_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__naval_commander_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__watercraft_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__request_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__latin_NN_3",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__sloe_NN_3",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__wood_rat_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__nitrify_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__africa_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__passeriformes_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__lie_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__riddance_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__puzzle_VB_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__thawing_NN_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__order_coleoptera_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__energetic_JJ_1",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__exhume_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__snobbism_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__fearful_JJ_3",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__population_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__craving_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__oslo_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__majors_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__plug_VB_5",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__trope_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__thump_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__sticker_NN_4",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__opposition_NN_4",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__waver_NN_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__hit_VB_3",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__observe_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__tell_apart_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__atrophy_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__run_VB_17",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__scandinavia_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__tip_VB_5",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__thoughtful_JJ_4",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__cinch_VB_3",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__south_korea_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__shoot_VB_3",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__terminal_NN_3",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__match_VB_9",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__whisper_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__rawness_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__shrink_VB_3",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__snooze_NN_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__suspect_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__genus_gerardia_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__united_states_department_of_defense_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__federate_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__anal_stage_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__wharf_VB_4",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__journeying_NN_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__remark_VB_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__transport_VB_4",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__yiddish_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__wreak_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__international_islamic_front_for_jihad_against_jews_and_crusaders_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__co-option_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__finger_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__vitiate_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__realization_NN_3",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__strain_NN_5",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__move_into_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__ip_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__lily_family_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__tapioca_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__sand_viper_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__thomas_aquinas_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__spangle_VB_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__antigen_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__matrix_algebra_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__organize_VB_3",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__accompanyist_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__receive_VB_4",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__amenorrhoea_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__orwell_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__seed_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__sustain_VB_5",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__whine_NN_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__pudendum_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__spinacia_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__sound_law_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__zaire_river_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__optical_instrument_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__subphylum_cephalochordata_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__rhetoric_NN_3",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__existent_JJ_3",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__deportation_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__emblazon_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__persian_JJ_1",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__genus_erysimum_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__puddle_VB_7",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__sainthood_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__mire_VB_3",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__parlour_grand_piano_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__hood_NN_9",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__move_VB_11",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__family_agaricaceae_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__mombasa_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__scour_VB_4",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__manure_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__berry_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__curry_favour_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__wagon_wheel_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__coward_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__genus_pogonia_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__spirodela_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__demotion_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__bill_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__snuggle_NN_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__entrepreneur_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__isomerize_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__statement_NN_6",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__rwandese_republic_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__smell_VB_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__patronymic_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__ulex_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__relation_NN_6",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__rhythm_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__sterculiaceae_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__signboard_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__genus_pandanus_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__plastic_film_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__pyrometer_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__wintertime_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__withdraw_VB_7",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__day_of_the_week_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__state_of_kuwait_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__rise_to_power_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__embarrass_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__mandalay_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__primus_stove_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__tone_NN_3",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__stumblebum_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__twirler_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__saratoga_chip_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__register_NN_3",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__drumfish_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__travel_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__standing_army_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__pyrrhocoridae_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__sparring_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__pleasure_craft_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__tabulation_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__sarcostyle_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__electrical_system_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__dislocation_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__purge_VB_4",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__snuffle_VB_3",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__compressible_JJ_1",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__land_VB_4",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__mystify_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__strewing_NN_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__run_NN_13",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__stock_VB_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__icon_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__capital_offense_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__plural_form_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__distress_VB_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__vertebrate_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__pull_in_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__volvocaceae_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__travel_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__hard_cheese_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__introduce_VB_6",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__whirl_VB_4",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__bean_VB_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__realization_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__disprove_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__tiff_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__snare_VB_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__vellicate_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__ratchet_down_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__republic_of_chile_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__stain_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__vaccinator_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__crush_VB_4",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__disagreeableness_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__buy_VB_3",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__sit_down_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__smock_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__brandenburg_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__totalitarianism_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__ground_VB_11",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__unravel_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__family_capparidaceae_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__parenchyma_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__mannheim_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__pincer_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__order_caryophyllales_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__provocative_JJ_1",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__syzygium_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__straggle_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__marking_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__nutritionary_JJ_1",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__genus_alnus_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__noose_VB_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__satirize_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__plan_of_action_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__melopsittacus_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__dkm_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__vim_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__inclination_NN_5",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__trier_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__trade_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__secular_humanism_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__reception_NN_5",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__indochinese_peninsula_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__malediction_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__technologist_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__hahnium_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__final_cause_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__geography_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__trust_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__reductant_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__identify_VB_6",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__order_campanulales_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__gentleman_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__hominidae_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__ticino_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__quechuan_language_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__favour_VB_4",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__market_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__to_a_higher_place_RB_1",
+    "predicted_type": "adverb"
+  },
+  {
+    "ID": "__photographic_camera_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__productive_JJ_2",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__contracture_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__thistle_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__consociate_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__splatter_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__date_VB_5",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__maritimes_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__complaint_NN_3",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__boot_camp_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__underbid_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__flat_JJ_5",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__veil_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__sensitizer_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__tale_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__top_NN_3",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__panel_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__peccary_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__african_NN_1",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__browser_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__quaker_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__insemination_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__ranunculaceae_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__souse_VB_3",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__integumentary_system_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__rationalization_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__sangria_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__elettaria_cardamomum_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__refer_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__bouncing_NN_1",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__viewing_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__intangibleness_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__oncorhynchus_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__match_VB_10",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__dynamical_JJ_1",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__crossover_NN_3",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__racing_circuit_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__unconsolable_JJ_1",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__exert_VB_3",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__procrastinate_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__confidence_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__depletion_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__qum_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__relegate_VB_3",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__quaternary_period_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__void_VB_4",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__rossbach_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__fthm_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__sculpture_VB_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__republic_of_albania_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__refute_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__scraping_NN_3",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__malus_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__slug_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__family_carangidae_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__spiritlessness_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__exact_JJ_1",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__word_division_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__hermannia_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__regulator_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__genus_caltha_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__titty_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__slipper_orchid_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__therapy_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__tone_NN_4",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__managing_director_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__snooper_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__cycle_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__woods_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__incandesce_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__shamanize_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__grow_VB_9",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__representation_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__alliterate_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__potentiality_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__pushcart_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__lard_VB_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__chorus_line_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__polish_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__blooming_NN_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__felidae_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__ward_off_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__excite_VB_7",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__substance_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__rowing_club_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__wow_NN_1",
+    "predicted_type": "adverb"
+  },
+  {
+    "ID": "__whiz_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__mantle_NN_4",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__slammer_NN_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__sever_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__weave_NN_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__inclined_plane_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__the_gambia_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__newcastle-upon-tyne_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__unafraid_JJ_1",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__muster_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__pension_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__levitate_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__wonder_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__expose_VB_8",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__thioridazine_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__wry_face_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__vivify_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__unsusceptibility_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__count_VB_4",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__doubt_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__haemoproteidae_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__impersonate_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__organism_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__spread_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__sponsor_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__gelatinize_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__soft_rush_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__set_phrase_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__sousing_NN_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__unchangeable_JJ_1",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__wearable_NN_1",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__transplant_VB_3",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__personnel_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__green_thumb_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__web_VB_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__hijacker_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__amoebous_JJ_1",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__stuff_VB_4",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__collider_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__yaw_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__prunus_padus_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__squeeze_VB_8",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__fluff_NN_3",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__sermon_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__splash_VB_6",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__almaty_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__glare_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__interior_decoration_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__salamandridae_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__emaciate_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__sign_up_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__radiotherapy_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__nurse_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__isolde_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__accompany_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__nonresident_NN_1",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__spoil_VB_4",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__earth_VB_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__command_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__mustard_family_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__romanticism_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__incoherent_JJ_1",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__louisville_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__romp_NN_3",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__expose_VB_3",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__thrusting_NN_1",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__distortion_NN_4",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__sus_scrofa_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__drawing_NN_3",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__presumption_NN_4",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__melon_vine_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__rashness_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__prohibitionist_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__landline_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__wad_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__genital_stage_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__cautery_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__play_VB_5",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__scratch_VB_3",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__prognostication_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__occlusive_JJ_1",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__sense_of_right_and_wrong_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__plan_VB_4",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__turdus_torquatus_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__tap_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__musical_harmony_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__sea_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__hinduism_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__wrap_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__hold_in_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__guided_missile_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__light_VB_5",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__signal_flag_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__trot_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__testimony_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__smash_VB_5",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__vasectomize_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__genus_agonus_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__extortion_NN_3",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__skirt_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__eumycota_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__newsflash_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__intubate_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__tidewater_region_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__naming_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__miler_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__scollop_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__plant_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__communism_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__disinvolve_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__sensible_JJ_1",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__extensor_muscle_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__indoctrination_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__adhere_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__thought-reader_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__teardrop_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__ukrayina_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__self-assertive_JJ_1",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__atomic_number_13_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__mucus_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__speculator_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__orchidaceae_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__suffocate_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__extraordinary_JJ_1",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__fence_VB_5",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__style_NN_3",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__unthaw_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__muster_in_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__onanist_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__compressor_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__violator_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__prance_VB_4",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__myelin_sheath_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__three-day_measles_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__idolization_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__equalizer_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__marginal_wood_fern_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__fund_VB_4",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__propionic_acid_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__view_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__inclement_JJ_2",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__midfield_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__hydrozoa_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__clipper_NN_4",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__interact_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__vindicate_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__pollution_NN_3",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__taxi_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__longways_dance_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__covenant_VB_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__response_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__piloting_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__melancholy_NN_3",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__pair_NN_3",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__falsify_VB_4",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__typify_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__autograph_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__system_NN_9",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__triton_NN_3",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__exit_NN_3",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__wane_NN_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__ghent_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__turn_over_VB_3",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__trailblazer_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__slit_NN_4",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__personality_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__mix_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__sell_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__name_VB_9",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__tergiversate_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__order_isospondyli_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__appeal_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__parabolical_JJ_1",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__implementation_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__clink_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__unmerciful_JJ_1",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__sudan_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__poise_VB_4",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__white_NN_12",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__pompadour_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__stitchery_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__courtroom_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__break_VB_20",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__temperature_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__tenderizer_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__sting_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__turn_down_VB_3",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__switch_over_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__islamic_state_of_afghanistan_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__body_NN_8",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__myriophyllum_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__vividness_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__whop_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__scull_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__tyrannus_tyrannus_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__protect_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__rank_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__assist_NN_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__family_cervidae_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__ketamine_hydrochloride_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__los_angeles_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__waddle_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__genus_cephalotaxus_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__excise_tax_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__deliberation_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__wagon_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__mammea_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__snuggling_NN_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__mash_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__freeholder_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__equation_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__irritation_NN_3",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__ride_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__stick_in_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__remember_VB_7",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__ecclesiastical_calendar_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__reinvigorate_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__watch_NN_5",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__vocal_NN_2",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__hoover_NN_4",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__broken_JJ_1",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__food_web_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__steamroller_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__reformation_NN_3",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__spellbinder_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__disparagement_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__cavy_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__ratibida_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__outroar_VB_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__suggest_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__solarization_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__genus_stevia_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__league_NN_3",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__market_analyst_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__pregnancy_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__hierarchy_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__squelch_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__linguistic_scientist_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__electromagnetic_spectrum_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__pouteria_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__scrap_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__abidjan_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__uranology_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__strike_out_VB_5",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__ascii_character_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__siesta_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__metrify_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__take_VB_11",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__vicia_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__negligent_JJ_1",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__tirich_mir_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__peanut_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__screening_NN_3",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__wuss_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__adulthood_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__federal_agent_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__stunting_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__traverse_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__rebate_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__master_VB_3",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__disfigurement_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__genus_crataegus_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__semblance_NN_3",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__halimodendron_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__tergiversation_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__boxwood_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__inebriation_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__interruption_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__clozaril_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__twist_NN_8",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__fomenter_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__genus_architeuthis_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__gentamicin_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__passionate_JJ_1",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__prairie_wagon_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__tense_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__cotonou_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__world_war_i_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__genus_echidnophaga_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__stub_NN_5",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__hearing_loss_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__luggage_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__papaver_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__breeding_NN_4",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__oryctolagus_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__parametric_statistic_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__white_NN_11",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__recuperate_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__signature_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__parader_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__bar_NN_15",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__crustacea_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__bowtie_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__field_of_honor_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__st._gregory_of_nazianzen_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__sacrilege_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__deck_VB_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__helenium_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__essential_JJ_2",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__take_VB_12",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__habituation_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__untruth_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__cut_up_VB_3",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__calcify_VB_4",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__watch_glass_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__collaborate_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__spotlight_VB_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__swan_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__identification_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__rosales_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__develop_VB_15",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__shaft_of_light_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__drive_NN_12",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__suborder_ruminantia_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__channel_island_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__put_through_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__shout_VB_3",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__shut_out_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__phylum_arthropoda_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__lawlessness_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__change_of_magnitude_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__suffice_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__trouper_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__supervisory_program_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__tread_NN_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__first_sacker_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__rerun_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__morchellaceae_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__synchronize_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__judge_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__aegean_sea_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__walkaway_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__positivistic_JJ_1",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__ordinariness_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__welcomer_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__charcoal_VB_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__prexy_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__jalopy_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__order_mantophasmatodea_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__cycle_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__whit_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__transferrer_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__spread_NN_4",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__rise_NN_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__ovulen_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__regulation_NN_5",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__pretend_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__packera_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__receive_VB_9",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__river_limpet_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__work_VB_16",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__archaist_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__messiah_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__class_aves_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__scablands_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__recess_VB_3",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__religious_cult_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__relationship_NN_4",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__identity_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__slave_NN_3",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__tear_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__haplopappus_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__patch_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__seem_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__active_JJ_13",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__joyful_JJ_1",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__intussuscept_VB_1",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__gastropoda_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__desire_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__jar_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__south_west_africa_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__pass_VB_23",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__repudiate_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__stage_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__spirit_NN_5",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__musical_theater_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__vernacular_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__justification_NN_3",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__shoot_VB_15",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__satirist_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__slight_VB_1",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__rattus_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__filicopsida_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__genus_fremontodendron_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__generally_accepted_accounting_principles_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__crash_NN_5",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__genus_brassica_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__chives_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__take_off_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__canoe_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__conch_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__walk_VB_9",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__idolization_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__ionization_tube_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__temporary_hookup_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__government_revenue_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__fell_NN_3",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__consult_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__statute_mile_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__teethe_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__phaeophyta_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__confinement_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__malcolm_x_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__forebear_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__ventilate_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__racism_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__wither_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__tacking_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__shuffling_NN_2",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__soften_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__play_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__brynhild_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__prosecution_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__psocoptera_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__monodontidae_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__wall_NN_7",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__tone_VB_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__family_cryptobranchidae_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__amniotic_sac_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__olive_family_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__terror_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__polygonum_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__assist_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__potential_JJ_1",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__measure_VB_3",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__synthetic_fiber_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__craps_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__anoestrus_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__yacht_VB_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__world_war_ii_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__family_didelphidae_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__ventilation_shaft_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__troops_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__quercus_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__sensitive_JJ_3",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__uncertain_JJ_2",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__order_marsupialia_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__capital_of_gambia_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__train_VB_3",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__fitter_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__king_nut_hickory_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__haul_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__write_VB_8",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__uniform_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__class_aphasmidia_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__affectedness_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__acapulco_de_juarez_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__articulatory_system_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__windlass_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__x_ray_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__organize_VB_4",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__tupelo_family_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__mahernia_verticillata_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__stress_NN_3",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__scent_VB_3",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__thunnus_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__written_document_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__subscriber_NN_3",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__incarceration_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__maxim_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__grant_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__servicing_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__vietnam_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__choking_coil_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__exist_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__oesophagogastric_junction_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__chordate_family_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__pneumoencephalogram_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__crown_VB_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__mutation_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__saturnia_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__trunk_NN_3",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__military_campaign_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__slump_VB_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__break_VB_5",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__waste_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__crown_of_thorns_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__smyrnium_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__decouple_VB_3",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__infiltrate_VB_3",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__subnormality_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__pant_VB_2",
+    "predicted_type": "adverb"
+  },
+  {
+    "ID": "__genus_balaenoptera_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__poaceae_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__leg_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__polygamy_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__vendition_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__potentilla_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__nominate_VB_3",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__hydrocharitaceae_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__resister_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__phone_NN_3",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__knap_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__mouth_VB_3",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__smallmouthed_black_bass_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__marker_NN_3",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__case_history_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__umbelliferae_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__relativistic_JJ_1",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__hellene_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__theorize_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__uxor_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__unpleasant_JJ_1",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__transmit_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__drifting_NN_1",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__split_up_VB_3",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__risk_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__large_integer_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__period_NN_4",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__army_officer_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__sensitize_VB_4",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__resound_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__adornment_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__drill_master_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__shell_NN_8",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__logistic_support_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__spanish_lime_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__mess_VB_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__take_VB_38",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__curve_VB_4",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__regulator_NN_3",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__runner_NN_9",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__cape_horn_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__think_over_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__witness_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__astrophysicist_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__sentiency_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__indication_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__refer_VB_6",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__north_star_state_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__suborder_sauria_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__lead_on_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__steer_VB_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__sensitize_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__drive_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__calyculus_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__foremanship_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__souse_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__electorate_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__diagram_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__retrench_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__waterproof_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__car_factory_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__peramelidae_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__speed_up_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__schoolhouse_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__dishonour_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__solmizate_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__agitation_NN_3",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__hallucinate_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__halter_VB_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__mind_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__euskadi_ta_askatasuna_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__knee_joint_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__habit_NN_3",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__chippewyan_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__kick_VB_3",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__leathery_turtle_NN_1",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__run_VB_23",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__size_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__antiviral_drug_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__heating_system_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__carry_VB_21",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__tincture_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__unwind_VB_3",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__graptophyllum_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__portrayal_NN_5",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__percolate_NN_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__coalition_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__khaya_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__tympanist_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__saxegothea_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__independency_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__sham_VB_2",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__theology_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__personify_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__kwangchow_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__order_apodiformes_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__maltreater_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__reflect_VB_7",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__snigger_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__saute_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__apportion_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__xiphosurus_polyphemus_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__libyan_islamic_group_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__egis_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__par_VB_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__orthoptera_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__sea_mew_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__voice_NN_11",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__biota_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__high_beam_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__gaucho_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__halophile_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__triplicity_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__squeeze_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__centre_of_mass_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__ibn-roshd_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__subphylum_pentastomida_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__liven_up_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__enfeeble_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__protology_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__pereskia_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__zaglossus_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__volunteer_state_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__distributor_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__burner_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__europe_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__emblem_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__ask_VB_5",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__double_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__surround_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__scurf_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__send_VB_3",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__platichthys_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__implode_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__spike_VB_5",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__pterodactylidae_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__uninteresting_JJ_1",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__autotrophic_organism_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__turn_up_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__raphanus_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__twitch_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__ulvaceae_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__genus_brontosaurus_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__chromatography_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__hiccup_VB_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__liberalize_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__copying_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__exuberance_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__rectilinear_regression_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__lubricate_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__placate_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__snuff_it_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__reader_NN_6",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__order_isoptera_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__realm_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__walk_on_air_VB_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__leptopteris_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__sadhe_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__stabber_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__spring_NN_6",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__mechanism_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__family_colubridae_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__pulicaria_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__forgive_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__spice_up_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__unsociable_JJ_1",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__determination_NN_5",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__shrink_NN_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__do_VB_9",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__mitella_diphylla_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__deaminization_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__lighting_NN_4",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__genus_citrullus_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__writing_NN_3",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__mesomorph_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__seaplane_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__wangler_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__weather_map_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__drive_VB_17",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__poikilotherm_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__crescendo_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__extrapolate_VB_3",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__gas_shell_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__gratification_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__lygaeidae_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__ny_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__judaism_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__forsake_VB_1",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__set_VB_23",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__deliberate_VB_2",
+    "predicted_type": "adjective"
+  },
+  {
+    "ID": "__diet_NN_3",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__remand_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__accent_mark_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__order_araneida_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__remembrance_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__womb_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__hemp_NN_2",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__patrioteer_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__garrison_VB_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__unite_VB_2",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__surprise_VB_3",
+    "predicted_type": "verb"
+  },
+  {
+    "ID": "__genus_cyperus_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__hypoglycemia_NN_1",
+    "predicted_type": "noun"
+  },
+  {
+    "ID": "__one_thousand_million_NN_1",
+    "predicted_type": "noun"
+  }
+]

@@ -6,7 +6,6 @@ from pathlib import Path
 
 from tqdm import tqdm
 from mistralai import Mistral
-
 from sklearn.metrics import accuracy_score, f1_score, classification_report, confusion_matrix
 
 ROOT = Path(__file__).resolve().parent
@@ -26,6 +25,7 @@ MODEL_MISTRAL = "mistral-small-latest"
 N_FEWSHOT = 6
 
 SLEEP_TIME = 1.2
+CHECKPOINT_EVERY = 1
 
 ALLOWED_LABELS = ["noun", "verb", "adjective", "adverb"]
 ALLOWED = set(ALLOWED_LABELS)
@@ -36,9 +36,11 @@ def load_json(path: Path):
     with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
 
-def save_json(obj, path: Path):
-    with open(path, "w", encoding="utf-8") as f:
+def atomic_save_json(obj, path: Path):
+    tmp = path.with_suffix(path.suffix + ".tmp")
+    with open(tmp, "w", encoding="utf-8") as f:
         json.dump(obj, f, indent=2, ensure_ascii=False)
+    tmp.replace(path)
 
 def norm_type(t):
     if isinstance(t, list) and t:
@@ -94,7 +96,7 @@ def postprocess(pred):
     pred = pred.split()[0] if pred else ""
     return pred if pred in ALLOWED else "unknown"
 
-def call_llm(client, prompt, max_retries=8, base_sleep=1.0):
+def call_llm(client, prompt, max_retries=10, base_sleep=1.0):
     for attempt in range(max_retries):
         try:
             res = client.chat.complete(
@@ -106,16 +108,31 @@ def call_llm(client, prompt, max_retries=8, base_sleep=1.0):
             return extract_text(res.choices[0].message.content)
 
         except Exception as e:
-            msg = str(e)
-            is_429 = ("Status 429" in msg) or ("rate_limited" in msg) or ('"code":"1300"' in msg)
-            if not is_429:
+            msg = str(e).lower()
+            retriable = (
+                ("status 429" in msg) or ("rate_limited" in msg) or ('"code":"1300"' in msg) or
+                ("status 503" in msg) or ("service unavailable" in msg) or ("overflow" in msg) or
+                ("status 502" in msg) or ("bad gateway" in msg) or
+                ("status 504" in msg) or ("gateway timeout" in msg) or
+                ("disconnect" in msg) or ("reset" in msg) or ("connection" in msg)
+            )
+            if not retriable:
                 raise
 
             sleep_s = base_sleep * (2 ** attempt) + random.uniform(0, 0.5)
-            print(f"Rate limit (429). Retry {attempt+1}/{max_retries} in {sleep_s:.2f}s")
+            print(f"Transient API error. Retry {attempt+1}/{max_retries} in {sleep_s:.2f}s")
             time.sleep(sleep_s)
 
-    raise RuntimeError("Rate limit persisted after max retries.")
+    raise RuntimeError("Transient API errors persisted after max retries.")
+
+def load_existing_predictions(path: Path):
+    if not path.exists():
+        return {}
+    try:
+        preds = load_json(path)
+        return {p["ID"]: p["predicted_type"] for p in preds if "ID" in p and "predicted_type" in p}
+    except Exception:
+        return {}
 
 def main():
     api_key = os.getenv("MISTRAL_API_KEY")
@@ -129,31 +146,39 @@ def main():
     if not GT_FILE.exists():
         raise FileNotFoundError(f"GT file introuvable: {GT_FILE}")
 
+    print("OUTPUT_DIR =", OUTPUT_DIR)
+    print("OUTPUT_PRED_FILE =", OUTPUT_PRED_FILE)
+    print("OUTPUT_METRICS_FILE =", OUTPUT_METRICS_FILE)
+
     train_data = load_json(TRAIN_FILE)
     test_data = load_json(TEST_FILE)
     gt_data = load_json(GT_FILE)
 
     fewshot_block = build_fewshot_examples(train_data, N_FEWSHOT)
 
-    predictions = []
+    pred_map = load_existing_predictions(OUTPUT_PRED_FILE)
+    if pred_map:
+        print(f"Resume enabled: {len(pred_map)} predictions already saved.")
 
     with Mistral(api_key=api_key) as client:
         for item in tqdm(test_data):
+            item_id = item["ID"]
+            if item_id in pred_map:
+                continue
+
             prompt = build_prompt(item["term"], item.get("sentence", ""), fewshot_block)
             pred = postprocess(call_llm(client, prompt))
+            pred_map[item_id] = pred
 
-            predictions.append({
-                "ID": item["ID"],
-                "predicted_type": pred,
-            })
+            out_list = [{"ID": k, "predicted_type": v} for k, v in pred_map.items()]
+            atomic_save_json(out_list, OUTPUT_PRED_FILE)
 
             time.sleep(SLEEP_TIME)
 
-    save_json(predictions, OUTPUT_PRED_FILE)
+    out_list = [{"ID": k, "predicted_type": v} for k, v in pred_map.items()]
+    atomic_save_json(out_list, OUTPUT_PRED_FILE)
 
     gt_map = {x["ID"]: norm_type(x["type"]) for x in gt_data}
-    pred_map = {x["ID"]: x["predicted_type"] for x in predictions}
-
     y_true = [gt_map[k] for k in gt_map.keys()]
     y_pred = [pred_map.get(k, "unknown") for k in gt_map.keys()]
 
@@ -174,6 +199,7 @@ def main():
         "model": MODEL_MISTRAL,
         "n_fewshot": N_FEWSHOT,
         "sleep_time": SLEEP_TIME,
+        "checkpoint_every": CHECKPOINT_EVERY,
         "accuracy": acc,
         "macro_f1": macro_f1,
         "labels": ALLOWED_LABELS,
@@ -188,7 +214,7 @@ def main():
         }
     }
 
-    save_json(metrics, OUTPUT_METRICS_FILE)
+    atomic_save_json(metrics, OUTPUT_METRICS_FILE)
 
     print(f"Accuracy: {acc:.4f}")
     print(f"Macro-F1: {macro_f1:.4f}")
