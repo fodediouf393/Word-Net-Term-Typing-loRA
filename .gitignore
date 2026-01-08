@@ -25,3 +25,7 @@ downloads/
 # Outputs (ML results)
 outputs/predictions/
 outputs/runs/
+
+# LLM outputs (predictions / logs / metrics)
+output_llms/
+output_llms/**
