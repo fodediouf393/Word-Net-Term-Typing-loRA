@@ -15,10 +15,13 @@ venv/
 data/raw/
 data/processed/
 
-# Outputs (ne pas versionner)
-outputs/
+
 
 # HuggingFace caches (optionnel)
 .cache/
 **/.cache/
 downloads/
+
+# Outputs (ML results)
+outputs/predictions/
+outputs/runs/
