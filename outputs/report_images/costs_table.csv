@@ -1,0 +1,7 @@
+backbone,mode,train_time_sec,max_vram_mb,trainable_pct,accuracy,macro_f1
+bert,baseline,718.52,2139.50,100.0000,0.9885,0.9716
+bert,lora,411.30,1105.31,0.2714,0.9181,0.4573
+distilbert,baseline,473.77,1226.54,100.0000,0.9862,0.9679
+distilbert,lora,240.11,611.02,1.0948,0.9381,0.6653
+roberta,baseline,784.50,2345.85,100.0000,0.9859,0.9680
+roberta,lora,402.67,1206.70,0.7078,0.9543,0.6953

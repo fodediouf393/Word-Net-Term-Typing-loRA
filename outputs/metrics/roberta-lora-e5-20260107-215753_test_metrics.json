@@ -1,0 +1,77 @@
+{
+  "run_name": "roberta-lora-e5-20260107-215753",
+  "n": 9470,
+  "accuracy": 0.9542766631467793,
+  "macro_f1": 0.6953147290688204,
+  "labels": [
+    "noun",
+    "verb",
+    "adjective",
+    "adverb"
+  ],
+  "confusion_matrix": [
+    [
+      6716,
+      77,
+      25,
+      0
+    ],
+    [
+      286,
+      2044,
+      4,
+      0
+    ],
+    [
+      32,
+      2,
+      277,
+      0
+    ],
+    [
+      3,
+      2,
+      2,
+      0
+    ]
+  ],
+  "classification_report": {
+    "noun": {
+      "precision": 0.9543839704419497,
+      "recall": 0.9850396010560282,
+      "f1-score": 0.9694695055936485,
+      "support": 6818.0
+    },
+    "verb": {
+      "precision": 0.9618823529411765,
+      "recall": 0.8757497857754927,
+      "f1-score": 0.9167974882260597,
+      "support": 2334.0
+    },
+    "adjective": {
+      "precision": 0.8993506493506493,
+      "recall": 0.8906752411575563,
+      "f1-score": 0.8949919224555735,
+      "support": 311.0
+    },
+    "adverb": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 7.0
+    },
+    "accuracy": 0.9542766631467793,
+    "macro avg": {
+      "precision": 0.7039042431834439,
+      "recall": 0.6878661569972693,
+      "f1-score": 0.6953147290688204,
+      "support": 9470.0
+    },
+    "weighted avg": {
+      "precision": 0.9537192580977794,
+      "recall": 0.9542766631467793,
+      "f1-score": 0.9533253341648154,
+      "support": 9470.0
+    }
+  }
+}
