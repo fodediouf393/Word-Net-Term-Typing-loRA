@@ -26,79 +26,67 @@ and on clean, reproducible experimental comparisons.
 The task corresponds to **WordNet SubTask A.1 (Term Typing)**.
 
 Given:
-- a **lexical term** \( L \),
-- an optional **context sentence** \( S \),
+- a **lexical term** L,
+- an optional **context sentence** S,
 
-the goal is to predict the **semantic type** \( T \) of the term.
+the goal is to predict the **semantic type** T of the term.
 
 In the WordNet setting, the type space is defined as:
-\[
-\mathcal{T} = \{\text{noun}, \text{verb}, \text{adjective}, \text{adverb}\}
-\]
+
+T ∈ {noun, verb, adjective, adverb}
 
 ---
 
 ## Mathematical Formulation
 
-Formally, the Term Typing task is modeled as a classification problem:
+The Term Typing task is modeled as a classification function:
 
-\[
-f_\theta : (S, L) \;\longrightarrow\; T
-\]
+f(S, L) → T
 
 where:
-- \( L \) is a lexical term,
-- \( S \) is an optional context sentence,
-- \( T \in \mathcal{T} \) is the predicted term type,
-- \( f_\theta \) denotes a parameterized model.
+- L is a lexical term,
+- S is an optional context sentence,
+- T is the predicted semantic type.
 
 ---
 
 ### Encoder-Based Models
 
-For encoder-based approaches, the input pair \((S, L)\) is transformed into a textual
-representation \( x \), which is processed by a transformer encoder:
+Given a pair (S, L), a textual input x is constructed and passed to a transformer encoder:
 
-\[
-h = \text{Encoder}_\theta(x)
-\]
+h = Encoder(x)
 
-The encoder output is mapped to a probability distribution over types:
-\[
-p(T \mid S, L) = \text{softmax}(W h + b)
-\]
+The encoder representation is mapped to a probability distribution over types:
 
-The predicted type is:
-\[
-\hat{T} = \arg\max_{T \in \mathcal{T}} p(T \mid S, L)
-\]
+p(T | S, L) = softmax(W · h + b)
 
-Training is performed by minimizing the cross-entropy loss on labeled examples.
-Both **full fine-tuning** and **LoRA-based fine-tuning** are considered.
+The predicted type is obtained as:
+
+T̂ = argmax p(T | S, L)
+
+Training is performed using cross-entropy loss.
+Both **full fine-tuning** and **parameter-efficient fine-tuning with LoRA** are considered.
 
 ---
 
 ### Few-Shot LLM Formulation
 
-In the few-shot setting, no model parameters are updated.
-Instead, a prompt is constructed using a small set of labeled examples:
+In the few-shot setting, model parameters remain frozen.
+A prompt P is constructed from a small set of labeled examples:
 
-\[
-P = \{(S_i, L_i, T_i)\}_{i=1}^{k}
-\]
+P = {(S₁, L₁, T₁), …, (Sₖ, Lₖ, Tₖ)}
 
-Given a new input \((S, L)\), the LLM predicts:
-\[
-\hat{T} = \text{LLM}(P, S, L)
-\]
+Given a new input (S, L), the LLM predicts:
 
-The output is constrained to belong to the predefined type set \(\mathcal{T}\).
+T̂ = LLM(P, S, L)
+
+The output is constrained to belong to the predefined type set.
 
 ---
 
 ## Project Structure
 
- configs/ Training and LoRA configuration files
+configs/ Training and LoRA configuration files
 data/
 ├── raw/ WordNet datasets
 └── processed/ Optional processed data
@@ -108,7 +96,7 @@ src/term_typing/
 ├── eval_from_id.py Evaluation and confusion matrices
 ├── make_plots.py Comparative plots
 └── run_sweep.py Full experimental sweep
-fewshot_llms/
+
 ├── few-shot_mistral.py
 ├── few-shot_llama.py
 ├── few-shot_deepseek.py
