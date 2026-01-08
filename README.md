@@ -1,8 +1,8 @@
 # WordNet Term Typing with Encoders, LoRA and Few-Shot LLMs
 
 This project studies the **Term Typing task (Task A.1 – WordNet)** from the LLMs4OL framework.
-The objective is to predict the **generalized lexical type** of a term using
-encoder-based models and few-shot Large Language Models (LLMs).
+The objective is to predict the **generalized lexical type** of a term using encoder-based models
+and few-shot Large Language Models (LLMs).
 
 We explore and compare two complementary paradigms:
 
@@ -29,11 +29,15 @@ Given:
 - a lexical term **L**
 - an optional context sentence **S**
 
-the goal is to predict the semantic type **T**.
+the goal is to predict the semantic type **T**, where:
 
-<p align="center">
-  <b>T ∈ { noun, verb, adjective, adverb }</b>
-</p>
+<div align="center">
+  <div style="display:inline-block; padding:10px 14px; border:1px solid #c9c9c9; border-radius:10px;">
+    <span style="font-family: 'Times New Roman', Times, serif; font-style: italic; font-size: 16px;">
+      T ∈ { noun, verb, adjective, adverb }
+    </span>
+  </div>
+</div>
 
 ---
 
@@ -41,9 +45,11 @@ the goal is to predict the semantic type **T**.
 
 We model Term Typing as a classification function:
 
-<p align="center">
-  <img alt="f_theta" src="https://latex.codecogs.com/svg.image?\dpi{140}\bf%20f_{\theta}:(S,L)\rightarrow%20T" />
-</p>
+<div align="center">
+  <div style="display:inline-block; padding:12px 16px; border:1px solid #c9c9c9; border-radius:10px;">
+    <img alt="f_theta:(S,L)->T" src="https://latex.codecogs.com/svg.image?\dpi{160}\it%20f_{\theta}:(S,L)\rightarrow%20T" />
+  </div>
+</div>
 
 where:
 - **L** is a lexical term,
@@ -55,23 +61,30 @@ where:
 
 ### Encoder-Based Models
 
-For encoder-based approaches, the input pair (S, L) is converted to a textual sequence **x** and passed through an encoder:
+For encoder-based approaches, the input pair (S, L) is converted to a textual sequence **x**
+and passed through an encoder:
 
-<p align="center">
-  <img alt="h=Encoder(x)" src="https://latex.codecogs.com/svg.image?\dpi{140}\bf%20h=\mathrm{Encoder}_{\theta}(x)" />
-</p>
+<div align="center">
+  <div style="display:inline-block; padding:12px 16px; border:1px solid #c9c9c9; border-radius:10px;">
+    <img alt="h=Encoder_theta(x)" src="https://latex.codecogs.com/svg.image?\dpi{160}\it%20h=\mathrm{Encoder}_{\theta}(x)" />
+  </div>
+</div>
 
 The encoder output is mapped to a distribution over types:
 
-<p align="center">
-  <img alt="p(T|S,L)=softmax(Wh+b)" src="https://latex.codecogs.com/svg.image?\dpi{140}\bf%20p(T\mid%20S,L)=\mathrm{softmax}(Wh&plus;b)" />
-</p>
+<div align="center">
+  <div style="display:inline-block; padding:12px 16px; border:1px solid #c9c9c9; border-radius:10px;">
+    <img alt="p(T|S,L)=softmax(Wh+b)" src="https://latex.codecogs.com/svg.image?\dpi{160}\it%20p(T\mid%20S,L)=\mathrm{softmax}(Wh&plus;b)" />
+  </div>
+</div>
 
 The predicted type is:
 
-<p align="center">
-  <img alt="T_hat=argmax p(T|S,L)" src="https://latex.codecogs.com/svg.image?\dpi{140}\bf%20\hat{T}=\arg\max_{T\in\mathcal{T}}%20p(T\mid%20S,L)" />
-</p>
+<div align="center">
+  <div style="display:inline-block; padding:12px 16px; border:1px solid #c9c9c9; border-radius:10px;">
+    <img alt="T_hat=argmax" src="https://latex.codecogs.com/svg.image?\dpi{160}\it%20\hat{T}=\arg\max_{T\in\mathcal{T}}%20p(T\mid%20S,L)" />
+  </div>
+</div>
 
 Training is performed by minimizing cross-entropy loss on labeled examples.
 We compare:
@@ -84,15 +97,19 @@ We compare:
 
 In the few-shot setting, model parameters are not updated. A prompt **P** is built from a small labeled set:
 
-<p align="center">
-  <img alt="P={(Si,Li,Ti)}" src="https://latex.codecogs.com/svg.image?\dpi{140}\bf%20P=\{(S_i,L_i,T_i)\}_{i=1}^{k}" />
-</p>
+<div align="center">
+  <div style="display:inline-block; padding:12px 16px; border:1px solid #c9c9c9; border-radius:10px;">
+    <img alt="P={(Si,Li,Ti)}" src="https://latex.codecogs.com/svg.image?\dpi{160}\it%20P=\{(S_i,L_i,T_i)\}_{i=1}^{k}" />
+  </div>
+</div>
 
 Given a new input (S, L), the LLM predicts:
 
-<p align="center">
-  <img alt="T_hat=LLM(P,S,L)" src="https://latex.codecogs.com/svg.image?\dpi{140}\bf%20\hat{T}=\mathrm{LLM}(P,S,L)" />
-</p>
+<div align="center">
+  <div style="display:inline-block; padding:12px 16px; border:1px solid #c9c9c9; border-radius:10px;">
+    <img alt="T_hat=LLM(P,S,L)" src="https://latex.codecogs.com/svg.image?\dpi{160}\it%20\hat{T}=\mathrm{LLM}(P,S,L)" />
+  </div>
+</div>
 
 The output is constrained to belong to the predefined type set.
 
@@ -100,55 +117,24 @@ The output is constrained to belong to the predefined type set.
 
 ## Project Structure
 
-configs/ Training and LoRA configuration files
+```text
+configs/                  Training and LoRA configuration files
 data/
-├── raw/ WordNet datasets
-└── processed/ Optional processed data
+  ├── raw/                WordNet datasets
+  └── processed/          Optional processed data
 src/term_typing/
-├── train.py Encoder training (baseline / LoRA)
-├── predict.py Inference
-├── eval_from_id.py Evaluation and confusion matrices
-├── make_plots.py Comparative plots
-└── run_sweep.py Full experimental sweep
+  ├── train.py            Encoder training (baseline / LoRA)
+  ├── predict.py          Inference
+  ├── eval_from_id.py     Evaluation and confusion matrices
+  ├── make_plots.py       Comparative plots
+  └── run_sweep.py        Full experimental sweep
 fewshot_llms/
-├── few-shot_mistral.py
-├── few-shot_llama.py
-├── few-shot_deepseek.py
-└── few-shot_sml.py
+  ├── few-shot_mistral.py
+  ├── few-shot_llama.py
+  ├── few-shot_deepseek.py
+  └── few-shot_sml.py
 outputs/
-├── runs/ Training logs and checkpoints
-├── predictions/ Model predictions
-├── metrics/ Evaluation metrics (JSON)
-└── report_images/ Figures and confusion matrices
-
-
----
-
-## Evaluation Metrics
-
-- Accuracy
-- Macro-F1 score
-- Confusion matrices
-- Training cost indicators (time, number of trainable parameters)
-
-All figures are saved in `outputs/report_images/`.
-
----
-
-## Objectives
-
-This project aims to answer the following questions:
-
-- Can LoRA achieve performance comparable to full fine-tuning at a lower cost?
-- How do encoder-based approaches compare to few-shot LLM prompting?
-- What are the performance–efficiency trade-offs across model families?
-
----
-
-## Reproducibility
-
-- Fixed random seeds
-- Explicit YAML configuration files
-- TensorBoard logging for all encoder-based experiments
-- Unified evaluation pipeline
-
+  ├── runs/               Training logs and checkpoints
+  ├── predictions/        Model predictions
+  ├── metrics/            Evaluation metrics (JSON)
+  └── report_images/      Figures and confusion matrices
