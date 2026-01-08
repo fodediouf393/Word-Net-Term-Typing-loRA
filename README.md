@@ -45,17 +45,16 @@ the goal is to predict the semantic type **T**, where:
 
 We model Term Typing as a classification function:
 
-<div align="center">
-  <div style="display:inline-block; padding:12px 16px; border:1px solid #c9c9c9; border-radius:10px;">
-    <img alt="f_theta:(S,L)->T" src="https://latex.codecogs.com/svg.image?\dpi{160}\it%20f_{\theta}:(S,L)\rightarrow%20T" />
-  </div>
-</div>
+<p align="center">
+  f<sub>θ</sub>(S, L) → T
+</p>
 
 where:
-- **L** is a lexical term,
-- **S** is an optional context sentence,
-- **T** is the predicted semantic type,
-- **fθ** denotes a parameterized model.
+
+- L is a lexical term  
+- S is an optional context sentence  
+- T is the predicted semantic type  
+- f<sub>θ</sub> denotes a parameterized model
 
 ---
 
