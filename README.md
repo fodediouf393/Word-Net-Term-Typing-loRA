@@ -114,6 +114,18 @@ The output is constrained to belong to the predefined type set.
 
 ---
 
+## Results
+### Overall Performance
+
+| Backbone     | Mode     | Train Time (s) | Max VRAM (MB) | Trainable (%) | Accuracy | Macro-F1 |
+|--------------|----------|----------------|---------------|---------------|----------|----------|
+| BERT         | Baseline | 718.52         | 2139.50       | 100.00        | 0.9885   | 0.9716   |
+| BERT         | LoRA     | 411.30         | 1105.31       | 0.27          | 0.9181   | 0.4573   |
+| DistilBERT   | Baseline | 473.77         | 1226.54       | 100.00        | 0.9862   | 0.9679   |
+| DistilBERT   | LoRA     | 240.11         | 611.02        | 1.09          | 0.9381   | 0.6653   |
+| RoBERTa      | Baseline | 784.50         | 2345.85       | 100.00        | 0.9859   | 0.9680   |
+| RoBERTa      | LoRA     | 402.67         | 1206.70       | 0.71          | 0.9543   | 0.6953   |
+
 ## Project Structure
 
 ```text

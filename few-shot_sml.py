@@ -1,4 +1,3 @@
-import os
 import json
 import random
 from pathlib import Path
@@ -22,7 +21,6 @@ PROVIDER = "sml_local"
 MODEL = "Qwen/Qwen2.5-0.5B-Instruct"
 
 N_FEWSHOT = 6
-CHECKPOINT_EVERY = 1
 
 ALLOWED_LABELS = ["noun", "verb", "adjective", "adverb"]
 ALLOWED = set(ALLOWED_LABELS)
@@ -57,46 +55,49 @@ def build_fewshot_examples(train_data, n):
     return block.strip()
 
 def build_prompt(term, sentence, fewshot_block):
-    return f"""
-You are a linguistics expert.
+    return f"""Classify the POS of the term in context.
+Return exactly one label from: noun, verb, adjective, adverb.
 
-Your task is to determine the part of speech of a lexical term.
-Choose ONLY one of the following labels:
-- noun
-- verb
-- adjective
-- adverb
-
-Here are some examples:
+Examples:
 {fewshot_block}
 
-Now classify the following term:
 Term: {term}
 Sentence: {sentence}
-
-Answer with a single word from: noun, verb, adjective, adverb.
-""".strip()
+Label:""".strip()
 
 def postprocess(pred):
-    pred = str(pred).strip().lower()
-    pred = pred.replace(".", "").replace(",", "").replace(":", "")
-    pred = pred.split()[0] if pred else ""
-    return pred if pred in ALLOWED else "unknown"
+    s = str(pred).strip().lower()
+    s = s.replace(".", " ").replace(",", " ").replace(":", " ").replace(";", " ").replace("\n", " ")
+    s = " ".join(s.split())
+
+    mapping = {
+        "nn": "noun", "nns": "noun", "nnp": "noun", "nnps": "noun",
+        "vb": "verb", "vbd": "verb", "vbg": "verb", "vbn": "verb", "vbp": "verb", "vbz": "verb",
+        "jj": "adjective", "jjr": "adjective", "jjs": "adjective", "adj": "adjective",
+        "rb": "adverb", "rbr": "adverb", "rbs": "adverb", "adv": "adverb",
+    }
+
+    first = s.split()[0] if s else ""
+    if first in ALLOWED:
+        return first
+    if first in mapping:
+        return mapping[first]
+
+    for lab in ["noun", "verb", "adjective", "adverb"]:
+        if lab in s:
+            return lab
+
+    for k, v in mapping.items():
+        if f" {k} " in f" {s} ":
+            return v
+
+    return "unknown"
 
 def call_llm_local(generator, prompt):
-    out = generator(prompt, max_new_tokens=8, do_sample=False, return_full_text=False)
+    out = generator(prompt, max_new_tokens=4, do_sample=False, return_full_text=False)
     if isinstance(out, list) and out and isinstance(out[0], dict) and "generated_text" in out[0]:
         return out[0]["generated_text"]
     return str(out)
-
-def load_existing_predictions(path: Path):
-    if not path.exists():
-        return {}
-    try:
-        preds = load_json(path)
-        return {p["ID"]: p["predicted_type"] for p in preds if "ID" in p and "predicted_type" in p}
-    except Exception:
-        return {}
 
 def save_confusion_matrix_png(cm, labels, path: Path, title: str):
     plt.figure()
@@ -120,34 +121,41 @@ def main():
     OUTPUT_METRICS_FILE = OUTPUT_DIR / f"A.1(FS)_WordNet_Metrics_{PROVIDER}_{safe_model}.json"
     OUTPUT_CM_PNG = OUTPUT_DIR / f"A.1(FS)_WordNet_ConfMat_{PROVIDER}_{safe_model}.png"
 
+    if OUTPUT_PRED_FILE.exists():
+        OUTPUT_PRED_FILE.unlink()
+    if OUTPUT_METRICS_FILE.exists():
+        OUTPUT_METRICS_FILE.unlink()
+    if OUTPUT_CM_PNG.exists():
+        OUTPUT_CM_PNG.unlink()
+
     train_data = load_json(TRAIN_FILE)
     test_data = load_json(TEST_FILE)
     gt_data = load_json(GT_FILE)
 
     fewshot_block = build_fewshot_examples(train_data, N_FEWSHOT)
 
-    pred_map = load_existing_predictions(OUTPUT_PRED_FILE)
-    if pred_map:
-        print(f"Resume enabled: {len(pred_map)} predictions already saved.")
-
     generator = pipeline("text-generation", model=MODEL, device_map="auto")
 
-    for item in tqdm(test_data):
-        item_id = item["ID"]
-        if item_id in pred_map:
-            continue
+    predictions = []
 
+    for item in tqdm(test_data[:5]):
         prompt = build_prompt(item["term"], item.get("sentence", ""), fewshot_block)
         raw = call_llm_local(generator, prompt)
-        pred_map[item_id] = postprocess(raw)
+        print("RAW:", repr(raw[:200]))
+        print("POST:", postprocess(raw))
+        print("---")
 
-        out_list = [{"ID": k, "predicted_type": v} for k, v in pred_map.items()]
-        atomic_save_json(out_list, OUTPUT_PRED_FILE)
+    for item in tqdm(test_data):
+        prompt = build_prompt(item["term"], item.get("sentence", ""), fewshot_block)
+        raw = call_llm_local(generator, prompt)
+        pred = postprocess(raw)
+        predictions.append({"ID": item["ID"], "predicted_type": pred})
 
-    out_list = [{"ID": k, "predicted_type": v} for k, v in pred_map.items()]
-    atomic_save_json(out_list, OUTPUT_PRED_FILE)
+    atomic_save_json(predictions, OUTPUT_PRED_FILE)
 
     gt_map = {x["ID"]: norm_type(x["type"]) for x in gt_data}
+    pred_map = {x["ID"]: x["predicted_type"] for x in predictions}
+
     y_true = [gt_map[k] for k in gt_map.keys()]
     y_pred = [pred_map.get(k, "unknown") for k in gt_map.keys()]
 
@@ -155,7 +163,7 @@ def main():
     macro_f1 = f1_score(y_true, y_pred, average="macro")
 
     report = classification_report(
-        y_true, y_pred, labels=ALLOWED_LABELS, digits=4, output_dict=True
+        y_true, y_pred, labels=ALLOWED_LABELS, digits=4, output_dict=True, zero_division=0
     )
 
     cm = confusion_matrix(y_true, y_pred, labels=ALLOWED_LABELS)
@@ -165,7 +173,6 @@ def main():
         "provider": PROVIDER,
         "model": MODEL,
         "n_fewshot": N_FEWSHOT,
-        "checkpoint_every": CHECKPOINT_EVERY,
         "accuracy": acc,
         "macro_f1": macro_f1,
         "labels": ALLOWED_LABELS,
