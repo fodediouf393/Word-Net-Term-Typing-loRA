@@ -1,0 +1,15 @@
+{
+  "mistral": {
+    "pred_file": "A.1(FS)_WordNet_Predictions_Mistral2025.json",
+    "params": "24B",
+    "accuracy": 0.9293558606124604,
+    "macro_f1": 0.7792265206687445
+  },
+  "qwen": {
+    "pred_file": "A.1(FS)_WordNet_Predictions_sml_local_Qwen_Qwen2.5-0.5B-Instruct.json",
+    "params": "0.5B",
+    "accuracy": 0.27835269271383317,
+    "macro_f1": 0.2053316301831133
+  },
+  "outputs_dir": "/home/infres/diouf-25/Word-Net-Term-Typing-loRA/output_llms/report_images_llms"
+}
