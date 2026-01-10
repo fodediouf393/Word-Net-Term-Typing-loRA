@@ -22,9 +22,9 @@ OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 PROVIDER = "llama_groq"
 MODEL = "llama-3.1-8b-instant"
 
-N_FEWSHOT = 6
-SLEEP_TIME = 1.2
-CHECKPOINT_EVERY = 1
+N_FEWSHOT = 4
+SLEEP_TIME = 0.05
+SAVE_EVERY = 10
 
 ALLOWED_LABELS = ["noun", "verb", "adjective", "adverb"]
 ALLOWED = set(ALLOWED_LABELS)
@@ -59,31 +59,22 @@ def build_fewshot_examples(train_data, n):
     return block.strip()
 
 def build_prompt(term, sentence, fewshot_block):
-    return f"""
-You are a linguistics expert.
+    return f"""POS classification.
+Labels: noun, verb, adjective, adverb.
 
-Your task is to determine the part of speech of a lexical term.
-Choose ONLY one of the following labels:
-- noun
-- verb
-- adjective
-- adverb
-
-Here are some examples:
+Examples:
 {fewshot_block}
 
-Now classify the following term:
 Term: {term}
 Sentence: {sentence}
-
-Answer with a single word from: noun, verb, adjective, adverb.
-""".strip()
+Label:""".strip()
 
 def postprocess(pred):
-    pred = str(pred).strip().lower()
-    pred = pred.replace(".", "").replace(",", "").replace(":", "")
-    pred = pred.split()[0] if pred else ""
-    return pred if pred in ALLOWED else "unknown"
+    s = str(pred).strip().lower()
+    s = s.replace(".", " ").replace(",", " ").replace(":", " ").replace(";", " ").replace("\n", " ")
+    s = " ".join(s.split())
+    first = s.split()[0] if s else ""
+    return first if first in ALLOWED else "unknown"
 
 def backoff_sleep(base_sleep, attempt):
     return base_sleep * (2 ** attempt) + random.uniform(0, 0.5)
@@ -97,6 +88,7 @@ def call_llm_openai_compat(client, model, prompt, max_retries=10, base_sleep=1.0
                 temperature=0,
             )
             return res.choices[0].message.content
+
         except Exception as e:
             msg = str(e).lower()
             retriable = (
@@ -108,7 +100,11 @@ def call_llm_openai_compat(client, model, prompt, max_retries=10, base_sleep=1.0
             )
             if not retriable:
                 raise
-            time.sleep(backoff_sleep(base_sleep, attempt))
+
+            sleep_s = backoff_sleep(base_sleep, attempt)
+            print(f"Transient API error. Retry {attempt+1}/{max_retries} in {sleep_s:.2f}s")
+            time.sleep(sleep_s)
+
     raise RuntimeError("Transient API errors persisted after max retries.")
 
 def load_existing_predictions(path: Path):
@@ -142,9 +138,9 @@ def main():
         raise RuntimeError("GROQ_API_KEY non définie")
 
     safe_model = MODEL.replace("/", "_").replace(":", "_")
-    OUTPUT_PRED_FILE = OUTPUT_DIR / f"A.1(FS)_WordNet_Predictions_{PROVIDER}_{safe_model}.json"
-    OUTPUT_METRICS_FILE = OUTPUT_DIR / f"A.1(FS)_WordNet_Metrics_{PROVIDER}_{safe_model}.json"
-    OUTPUT_CM_PNG = OUTPUT_DIR / f"A.1(FS)_WordNet_ConfMat_{PROVIDER}_{safe_model}.png"
+    OUT_PRED = OUTPUT_DIR / f"A.1(FS)_WordNet_Predictions_{PROVIDER}_{safe_model}.json"
+    OUT_METRICS = OUTPUT_DIR / f"A.1(FS)_WordNet_Metrics_{PROVIDER}_{safe_model}.json"
+    OUT_CM = OUTPUT_DIR / f"A.1(FS)_WordNet_ConfMat_{PROVIDER}_{safe_model}.png"
 
     train_data = load_json(TRAIN_FILE)
     test_data = load_json(TEST_FILE)
@@ -152,9 +148,9 @@ def main():
 
     fewshot_block = build_fewshot_examples(train_data, N_FEWSHOT)
 
-    pred_map = load_existing_predictions(OUTPUT_PRED_FILE)
+    pred_map = load_existing_predictions(OUT_PRED)
     if pred_map:
-        print(f"Resume enabled: {len(pred_map)} predictions already saved.")
+        print(f"Resume enabled: {len(pred_map)} predictions already saved in {OUT_PRED}")
 
     client = OpenAI(
         api_key=api_key,
@@ -170,13 +166,14 @@ def main():
         raw = call_llm_openai_compat(client, MODEL, prompt)
         pred_map[item_id] = postprocess(raw)
 
-        out_list = [{"ID": k, "predicted_type": v} for k, v in pred_map.items()]
-        atomic_save_json(out_list, OUTPUT_PRED_FILE)
+        if len(pred_map) % SAVE_EVERY == 0:
+            out_list = [{"ID": k, "predicted_type": v} for k, v in pred_map.items()]
+            atomic_save_json(out_list, OUT_PRED)
 
         time.sleep(SLEEP_TIME)
 
     out_list = [{"ID": k, "predicted_type": v} for k, v in pred_map.items()]
-    atomic_save_json(out_list, OUTPUT_PRED_FILE)
+    atomic_save_json(out_list, OUT_PRED)
 
     gt_map = {x["ID"]: norm_type(x["type"]) for x in gt_data}
     y_true = [gt_map[k] for k in gt_map.keys()]
@@ -186,36 +183,36 @@ def main():
     macro_f1 = f1_score(y_true, y_pred, average="macro")
 
     report = classification_report(
-        y_true, y_pred, labels=ALLOWED_LABELS, digits=4, output_dict=True
+        y_true, y_pred, labels=ALLOWED_LABELS, digits=4, output_dict=True, zero_division=0
     )
 
     cm = confusion_matrix(y_true, y_pred, labels=ALLOWED_LABELS)
-    save_confusion_matrix_png(cm, ALLOWED_LABELS, OUTPUT_CM_PNG, f"{PROVIDER} | {MODEL}")
+    save_confusion_matrix_png(cm, ALLOWED_LABELS, OUT_CM, f"{PROVIDER} | {MODEL}")
 
     metrics = {
         "provider": PROVIDER,
         "model": MODEL,
         "n_fewshot": N_FEWSHOT,
         "sleep_time": SLEEP_TIME,
-        "checkpoint_every": CHECKPOINT_EVERY,
+        "save_every": SAVE_EVERY,
         "accuracy": acc,
         "macro_f1": macro_f1,
         "labels": ALLOWED_LABELS,
         "confusion_matrix": cm.tolist(),
         "classification_report": report,
         "outputs": {
-            "predictions_json": str(OUTPUT_PRED_FILE),
-            "metrics_json": str(OUTPUT_METRICS_FILE),
-            "confmat_png": str(OUTPUT_CM_PNG),
+            "predictions_json": str(OUT_PRED),
+            "metrics_json": str(OUT_METRICS),
+            "confmat_png": str(OUT_CM),
         },
     }
-    atomic_save_json(metrics, OUTPUT_METRICS_FILE)
+    atomic_save_json(metrics, OUT_METRICS)
 
     print(f"Accuracy: {acc:.4f}")
     print(f"Macro-F1: {macro_f1:.4f}")
-    print(f"Saved: {OUTPUT_PRED_FILE}")
-    print(f"Saved: {OUTPUT_METRICS_FILE}")
-    print(f"Saved: {OUTPUT_CM_PNG}")
+    print(f"Saved: {OUT_PRED}")
+    print(f"Saved: {OUT_METRICS}")
+    print(f"Saved: {OUT_CM}")
 
 if __name__ == "__main__":
     main()

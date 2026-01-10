@@ -23,8 +23,8 @@ data/processed/
 downloads/
 
 # Outputs (ML results)
-outputs/predictions/
-outputs/runs/
+outputs_encoder/predictions/
+outputs_encoder/runs/
 
 # LLM outputs (predictions / logs / metrics)
 output_llms/
