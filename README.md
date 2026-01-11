@@ -40,14 +40,14 @@ $$
 We model Term Typing as a classification function:
 
 $$
-f_{\theta}(S, L) \rightarrow T,
+f_{\theta}(S, L) \rightarrow T
 $$
 
 where:
 - **L** is a lexical term  
 - **S** is an optional context sentence  
 - **T** is the predicted semantic type  
-- **f_{\theta}** denotes a parameterized model  
+- **fθ** denotes a parameterized model  
 
 ---
 
@@ -114,10 +114,6 @@ Given a new input (S, L), the LLM predicts a type constrained to belong to the p
 ### Few-Shot LLMs (Mistral vs Qwen)
 
 <p align="center">
-  <img src="output_llms/report_images_llms/llm_results_table_like.png" width="650">
-</p>
-
-<p align="center">
   <img src="output_llms/report_images_llms/bar_mistral_vs_qwen_acc_and_macro_f1.png" width="550">
 </p>
 
@@ -146,11 +142,6 @@ fewshot_llms/
   ├── few-shot_llama.py
   ├── few-shot_deepseek.py
   └── few-shot_sml.py
-outputs/
-  ├── runs/               Training logs and checkpoints
-  ├── predictions/        Model predictions
-  ├── metrics/            Evaluation metrics (JSON)
-  └── report_images/      Figures and confusion matrices
 outputs_encoder/
   └── report_images/      Encoder figures (PNG/SVG)
 output_llms/
