@@ -12,9 +12,7 @@ We explore and compare two complementary paradigms:
    - Parameter-efficient fine-tuning with **LoRA**
 2. **Few-shot prompting with LLMs**
    - Mistral
-   - LLaMA (via Groq)
-   - DeepSeek
-   - Local small language models
+   - Qwen (local small language model)
 
 The focus of this work is on **performance vs computational cost trade-offs**
 and on clean, reproducible experimental comparisons.
@@ -31,13 +29,9 @@ Given:
 
 the goal is to predict the semantic type **T**, where:
 
-<div align="center">
-  <div style="display:inline-block; padding:10px 14px; border:1px solid #c9c9c9; border-radius:10px;">
-    <span style="font-family: 'Times New Roman', Times, serif; font-style: italic; font-size: 16px;">
-      T ∈ { noun, verb, adjective, adverb }
-    </span>
-  </div>
-</div>
+$$
+T \in \{\text{noun},\ \text{verb},\ \text{adjective},\ \text{adverb}\}
+$$
 
 ---
 
@@ -45,86 +39,95 @@ the goal is to predict the semantic type **T**, where:
 
 We model Term Typing as a classification function:
 
-<p align="center">
-  f<sub>θ</sub>(S, L) → T
-</p>
+$$
+f_{\theta}(S, L) \rightarrow T
+$$
 
 where:
-
-- L is a lexical term  
-- S is an optional context sentence  
-- T is the predicted semantic type  
-- f<sub>θ</sub> denotes a parameterized model
-
----
-
-### Encoder-Based Models
-
-For encoder-based approaches, the input pair (S, L) is converted to a textual sequence **x**
-and passed through an encoder:
-
-<div align="center">
-  <div style="display:inline-block; padding:12px 16px; border:1px solid #c9c9c9; border-radius:10px;">
-    <img alt="h=Encoder_theta(x)" src="https://latex.codecogs.com/svg.image?\dpi{160}\it%20h=\mathrm{Encoder}_{\theta}(x)" />
-  </div>
-</div>
-
-The encoder output is mapped to a distribution over types:
-
-<div align="center">
-  <div style="display:inline-block; padding:12px 16px; border:1px solid #c9c9c9; border-radius:10px;">
-    <img alt="p(T|S,L)=softmax(Wh+b)" src="https://latex.codecogs.com/svg.image?\dpi{160}\it%20p(T\mid%20S,L)=\mathrm{softmax}(Wh&plus;b)" />
-  </div>
-</div>
-
-The predicted type is:
-
-<div align="center">
-  <div style="display:inline-block; padding:12px 16px; border:1px solid #c9c9c9; border-radius:10px;">
-    <img alt="T_hat=argmax" src="https://latex.codecogs.com/svg.image?\dpi{160}\it%20\hat{T}=\arg\max_{T\in\mathcal{T}}%20p(T\mid%20S,L)" />
-  </div>
-</div>
-
-Training is performed by minimizing cross-entropy loss on labeled examples.
-We compare:
-- **full fine-tuning** (baseline)
-- **LoRA** parameter-efficient fine-tuning
-
----
-
-### Few-Shot LLM Formulation
-
-In the few-shot setting, model parameters are not updated. A prompt **P** is built from a small labeled set:
-
-<div align="center">
-  <div style="display:inline-block; padding:12px 16px; border:1px solid #c9c9c9; border-radius:10px;">
-    <img alt="P={(Si,Li,Ti)}" src="https://latex.codecogs.com/svg.image?\dpi{160}\it%20P=\{(S_i,L_i,T_i)\}_{i=1}^{k}" />
-  </div>
-</div>
-
-Given a new input (S, L), the LLM predicts:
-
-<div align="center">
-  <div style="display:inline-block; padding:12px 16px; border:1px solid #c9c9c9; border-radius:10px;">
-    <img alt="T_hat=LLM(P,S,L)" src="https://latex.codecogs.com/svg.image?\dpi{160}\it%20\hat{T}=\mathrm{LLM}(P,S,L)" />
-  </div>
-</div>
-
-The output is constrained to belong to the predefined type set.
+- **L** is a lexical term  
+- **S** is an optional context sentence  
+- **T** is the predicted semantic type  
+- **f\_{\theta}** denotes a parameterized model  
 
 ---
 
 ## Results
-### Overall Performance
 
-| Backbone     | Mode     | Train Time (s) | Max VRAM (MB) | Trainable (%) | Accuracy | Macro-F1 |
-|--------------|----------|----------------|---------------|---------------|----------|----------|
-| BERT         | Baseline | 718.52         | 2139.50       | 100.00        | 0.9885   | 0.9716   |
-| BERT         | LoRA     | 411.30         | 1105.31       | 0.27          | 0.9181   | 0.4573   |
-| DistilBERT   | Baseline | 473.77         | 1226.54       | 100.00        | 0.9862   | 0.9679   |
-| DistilBERT   | LoRA     | 240.11         | 611.02        | 1.09          | 0.9381   | 0.6653   |
-| RoBERTa      | Baseline | 784.50         | 2345.85       | 100.00        | 0.9859   | 0.9680   |
-| RoBERTa      | LoRA     | 402.67         | 1206.70       | 0.71          | 0.9543   | 0.6953   |
+### Encoder-Based Models
+
+#### Overall Performance and Cost
+
+<p align="center">
+  <img src="outputs_encoder/report_images/costs_table.png" width="900">
+</p>
+
+<p align="center">
+  <em>Comparison of encoder-based models in baseline and LoRA settings, highlighting performance and computational cost.</em>
+</p>
+
+---
+
+#### Macro-F1 by Backbone (Baseline vs LoRA)
+
+<p align="center">
+  <img src="outputs_encoder/report_images/perf_macro_f1_by_backbone.png" width="600">
+</p>
+
+<p align="center">
+  <em>Macro-F1 comparison across backbones for full fine-tuning and LoRA.</em>
+</p>
+
+---
+
+#### Confusion Matrices
+
+<p align="center">
+  <img src="outputs_encoder/report_images/confusion_bert-baseline-e5-20260107-215753.png" width="280">
+  <img src="outputs_encoder/report_images/confusion_bert-lora-e5-20260107-215753.png" width="280">
+</p>
+
+<p align="center">
+  <img src="outputs_encoder/report_images/confusion_distilbert-baseline-e5-20260107-215753.png" width="280">
+  <img src="outputs_encoder/report_images/confusion_distilbert-lora-e5-20260107-215753.png" width="280">
+</p>
+
+<p align="center">
+  <img src="outputs_encoder/report_images/confusion_roberta-baseline-e5-20260107-215753.png" width="280">
+  <img src="outputs_encoder/report_images/confusion_roberta-lora-e5-20260107-215753.png" width="280">
+</p>
+
+<p align="center">
+  <em>Confusion matrices for encoder-based models. Baseline models show strong diagonal dominance, while LoRA degrades class balance, especially for adjectives and adverbs.</em>
+</p>
+
+---
+
+### Few-Shot LLMs
+
+#### Performance Comparison (Mistral vs Qwen)
+
+<p align="center">
+  <img src="output_llms/report_images_llms/bar_mistral_vs_qwen_acc_and_macro_f1.png" width="550">
+</p>
+
+<p align="center">
+  <em>Accuracy and Macro-F1 comparison between Mistral (24B) and Qwen2.5-0.5B in the few-shot setting.</em>
+</p>
+
+---
+
+#### Confusion Matrices (LLMs)
+
+<p align="center">
+  <img src="output_llms/report_images_llms/confusion_mistral.png" width="320">
+  <img src="output_llms/report_images_llms/confusion_qwen.png" width="320">
+</p>
+
+<p align="center">
+  <em>Confusion matrices for few-shot LLMs. Larger models exhibit more stable predictions across lexical categories.</em>
+</p>
+
+---
 
 ## Project Structure
 
@@ -144,8 +147,7 @@ fewshot_llms/
   ├── few-shot_llama.py
   ├── few-shot_deepseek.py
   └── few-shot_sml.py
-outputs/
-  ├── runs/               Training logs and checkpoints
-  ├── predictions/        Model predictions
-  ├── metrics/            Evaluation metrics (JSON)
-  └── report_images/      Figures and confusion matrices
+outputs_encoder/
+  └── report_images/      Encoder-based figures and confusion matrices
+output_llms/
+  └── report_images_llms/ LLM comparison figures
